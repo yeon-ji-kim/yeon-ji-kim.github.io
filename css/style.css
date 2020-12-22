@@ -17,8 +17,30 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease; }
-  a:hover {
-    text-decoration: none; }
+a:hover {
+    color:#000;
+    text-decoration:none; }
+
+    
+.underline {
+  line-height: 1.2;
+  background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.8s;
+  color: #000;
+  cursor: pointer;
+}
+@media (min-width: 1000px) {
+  .underline {
+  }
+}
+.underline.yellow {
+  background-image: linear-gradient(transparent 60%, #F8CD07 40%);
+}
+.underline:hover {
+  background-size: 100% 100%;
+}
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
