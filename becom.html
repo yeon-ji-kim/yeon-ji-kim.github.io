@@ -3,7 +3,7 @@
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-344L93F7Q0"></script>
-    <script>
+    <script> 
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -11,11 +11,13 @@
       gtag('config', 'G-344L93F7Q0');
     </script>
     
-    <title>Yeonji Kim &mdash; Portfolio</title>
+    <title>Be_com &mdash; Yeonji Kim</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -36,7 +38,12 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link href="./pointer.css" rel="stylesheet">
-    
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
@@ -62,7 +69,7 @@
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="index.html" class="nav-link">Work</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="YeonjiKim_CV_201221.pdf" target="_blank" class="nav-link">Resume</a></li>
+                <li><a href="YeonjiKim_CV.pdf" target="_blank" class="nav-link">Resume</a></li>
               </ul>
             </nav>
             <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
@@ -72,25 +79,36 @@
       
     </header>
 
+    <nav class="floating-menu">
+      <a href="#becom-overview" class="floating-nav">Overview</a><br>
+      <a href="#becom-research" class="floating-nav">Research</a><br>
+      <a href="#becom-design" class="floating-nav">Design</a><br>
+      <a href="#becom-implementation" class="floating-nav">Implementation</a>
+    </nav>
+
+    <div class="floating-top">
+      <a href="#home-section" class="btn-top">🡹 top</a>
+    </div>
+    
     <div class="intro-section" id="home-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-4 mr-auto" data-aos="fade-up">
-            <h1>We do things right.</h1>
-            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsa nulla sed quis rerum amet natus quas necessitatibus.</p>
-            <p><a href="#" class="btn btn-primary py-3 px-5">Check out my work</a></p>
+            <h1>Be_com</h1>
+            <p class="mb-5">Online Social Networking Platform for Classes in post-COVID-19 Era</p>
+            <p><a href="https://github.com/aroneia/Be_com" target="_blank" class="btn btn-primary py-3 px-5">View Code</a></p>
 
           </div>
-          <div class="col-lg-2 ml-auto"  data-aos="fade-up" data-aos-delay="100">
-            <figure class="img-absolute">
-              <img src="images/person_1.jpg" alt="Image" class="img-fluid">
+          <div class="col-lg-8 mr-auto"  data-aos="fade-up" data-aos-delay="100">
+            <figure class="img-absolute-box">
+              <img src="images/becom/becom_thumbnail.png" alt="Image" class="img-fluid">
             </figure>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section pf-info">
+    <div class="site-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mr-auto mb-4">
@@ -115,7 +133,7 @@
       </div>
     </div>
 
-    <div class="site-section bg-light" id="">
+    <div class="site-section bg-light" id="becom-overview">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12 mb-5">
@@ -143,12 +161,43 @@
       </div>
     </div>
 
-    <div class="site-section" id="process">
+    <div class="site-section" id="solution">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="mb-5">
+              <h2 class="section-title">Solution</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 mr-auto mb-5">
+              <p><span style="font-weight:700; font-size:1.2rem;">Online Social Networking Platform for Classes</span><br>
+              by connecting with others<br><br>
+            # COVID-19 &nbsp; # Social Networking</p>
+            <p>
+              <span style="font-weight:700;">FEAETURES</span><br>
+              1. Sharing Personal Information<br>
+              2. Writing Mood-Tracker & Analysis<br>
+              3. Networking with a mate<br>
+              4. Writing posts with classmates<br>
+              5. Applying for psychology counseling
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/becom/becom_thumbnail.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light" id="process">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-5">
             <div class="mb-5">
-              <span class="section-sub-title d-block">Be_com</span>
               <h2 class="section-title">Process</h2>
             </div>
           </div>
@@ -157,19 +206,19 @@
           <div class="col-lg-3"></div>
           <div class="col-lg-6">
             <div class="image-absolute-box" >
-              <img src="images/becom_process.png" alt="Image" class="img-fluid">
+              <img src="images/becom/becom_process.png" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section bg-light" id="affinity">
+    <div class="site-section" id="becom-research">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12">
-            <span class="section-sub-title d-block">Be_com</span>
-            <h2 class="section-title">Research</h2>
+            <span class="section-sub-title d-block">Research</span>
+            <h2 class="section-title">User Survey</h2>
             <p>To understand the problem at hand, we conducted desk research and collected survey results from teachers and students.<br>
               &nbsp; 👩‍🏫 23 Teachers & 👨‍🎓 30 Students responded.<br><br>
               From our research we uncovered that students were deeply empathizing with decrease in interactions with their cohorts during COVID-19 pandemic.
@@ -208,72 +257,79 @@
       </div>
     </div>
 
+    <!--Competitive Research-->
+
     <div class="site-section bg-light" id="affinity">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
-          <div class="col-lg-5 mr-auto mb-5">
-            <div class="mb-5">
-              <span class="section-sub-title d-block">Be_com</span>
-              <h2 class="section-title">Affinity Diagram</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-            </div>
+          <div class="col-lg-12">
+            <span class="section-sub-title d-block">Research</span>
+            <h2 class="section-title">Affinity Diagram</h2>
           </div>
-          <div class="col-lg-6">
+        </div>
+        <div class="row">
+          <div class="col-lg-7">
+              <p>To conceptualize our product, we wrote down all the effects, emotions, or features we want to achieve and deliver to users, and divided them into similar themes.<br><br>
+              As a result, we decided to focus our values on<br>
+              ✔️ Connectedness, Empathy, Expression, Community<br>
+              ✔️ Practical solutions to problems and dissolve worries<br>
+              ✔️ Lower the barriers for psychology counseling <br>
+              ✔️ Personal space to express and loock back at one’s feelings and thoughts 
+            </p>
+          </div>
+          <div class="col-lg-5">
             <div class="image-absolute-box" >
-              <!--<div class="box" data-aos="fade-up">
-                <div class="icon-wrap"><span class="flaticon-vector"></span></div>
-                <h3>Creativity is the key</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati commodi aspernatur eum eius inventore facilis.</p>
-              </div>-->
-              <img src="images/becom_affinity.jpg" alt="Image" class="img-fluid">
+              <img src="images/becom/becom_affinity.jpg" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section bg-light" id="#">
+    <!--Goal-->
+
+    <div class="site-section" id="#">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-5">
             <div class="mb-5">
-              <span class="section-sub-title d-block">Be_com</span>
               <h2 class="section-title">Core Functionalities</h2>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-2"></div>
+          <div class="col-lg-4">
+            <p>To deliver our values, we set five main functions. Each of them has a meaning of connection.</p>
+          </div>
           <div class="col-lg-8">
             <div class="image-absolute-box" >
-              <img src="images/becom_functions.png" alt="Image" class="img-fluid">
+              <img src="images/becom/becom_functions.png" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section bg-light" id="#">
+    <div class="site-section" id="#">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-5 mr-auto mb-5">
-            <span class="section-sub-title d-block">Be_com</span>
             <h2 class="section-title">Information Architecture</h2>
           </div>
           <div class="col-lg-7">
             <div class="image-absolute-box" >
-              <img src="images/becom_IA.png" alt="Image" class="img-fluid">
+              <img src="images/becom/becom_IA.png" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section bg-light" id="#">
+    <div class="site-section bg-light" id="becom-design">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-6 mr-auto">
-            <span class="section-sub-title d-block">Be_com</span>
+            <span class="section-sub-title d-block">Design</span>
             <h2 class="section-title">Sketches</h2>
             <p>
               We began ideation process by sketching out different layout options and interaction patterns for the main functionalities.
@@ -281,7 +337,272 @@
           </div>
           <div class="col-lg-5">
             <div class="image-absolute-box" >
-              <img src="images/becom_sketches.jpg" alt="Image" class="img-fluid">
+              <img src="images/becom/becom_sketches.jpg" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light" id="#">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-12 mr-auto">
+            <span class="section-sub-title d-block">Design</span>
+            <h2 class="section-title">Low-Fidelity Mockups</h2>
+            <p>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="image-absolute-box" >
+              <img src="images/becom/becom_low_1.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="image-absolute-box" >
+              <img src="images/becom/becom_low_2.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/becom/becom_low_3.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/becom/becom_low_4.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/becom/becom_low_5.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/becom/becom_low_6.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light" id="becom-final-design">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-12 mr-auto">
+            <span class="section-sub-title d-block">Design</span>
+            <h2 class="section-title">Final Design</h2>
+            <p>
+            </p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <div class="image-absolute-box" >
+              <img src="images/becom/becom_mockup.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg-4">
+            <div class="row justify-content-center">
+              <span class="section-sub-title d-block">Design</span>
+            </div>
+            <div class="row">
+              <div class="image-absolute-box" >
+                <img src="images/becom/Final_Main.png" alt="Image" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row justify-content-center">
+              <span class="section-sub-title d-block">Profile</span>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="image-absolute-box" >
+                  <img src="images/becom/Final_Profile.png" alt="Image" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="image-absolute-box" >
+                  <img src="images/becom/Final_Profile_Personal.png" alt="Image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <div class="row justify-content-center">
+              <span class="section-sub-title d-block">Mood Tracker</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+              <div class="image-absolute-box" >
+                <img src="images/becom/Final_MoodTracker_Write.png" alt="Image" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="image-absolute-box" >
+                <img src="images/becom/Final_MoodTracker_Analysis.png" alt="Image" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-2"></div>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <div class="row justify-content-center">
+              <span class="section-sub-title d-block">Mate</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="image-absolute-box" >
+                <img src="images/becom/Final_Mate.png" alt="Image" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="image-absolute-box" >
+                <img src="images/becom/Final_Mate_Gallery.png" alt="Image" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="image-absolute-box" >
+                <img src="images/becom/Final_Mate_Task.png" alt="Image" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <div class="row justify-content-center">
+              <span class="section-sub-title d-block">Forum</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="image-absolute-box" >
+                <img src="images/becom/Final_Forum.png" alt="Image" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="image-absolute-box" >
+                <img src="images/becom/Final_Forum_View.png" alt="Image" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="image-absolute-box" >
+                <img src="images/becom/Final_Forum_Write.png" alt="Image" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col-lg-8">
+            <div class="row justify-content-center">
+              <span class="section-sub-title d-block">Counseling</span>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="image-absolute-box" >
+                  <img src="images/becom/Final_Therapy.png" alt="Image" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="image-absolute-box" >
+                  <img src="images/becom/Final_Therapy_Done.png" alt="Image" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="row justify-content-center">
+              <span class="section-sub-title d-block">Teachers</span>
+            </div>
+            <div class="row">
+              <div class="image-absolute-box" >
+                <img src="images/becom/Final_Teacher.png" alt="Image" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section" id="becom-implementation">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-12 mr-auto">
+            <span class="section-sub-title d-block">Implement</span>
+            <h2 class="section-title">System Architecture</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 mr-auto">
+            <p>
+              We implemented our website by hard-coding and using some libraries and APIs.<br><br>
+              For visualizing analyses from mood trackers, we used <span style="font-weight:600;">wordcloud and Chart.js</span> library. We also added the <span style="font-weight:600;">Face API</span> from Microsoft Cognitive Service, which classifies faces in images into eight emotions.<br><br>
+              To classify sentences in Korean, we used <span style="font-weight:600;">KoNLPy</span>, which analyzes Korean words, and <span style="font-weight:600;">scikit-learn</span>, for building machine learning models.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/becom/becom_system_architecture.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light" id="#">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-5 mr-auto">
+            <span class="section-sub-title d-block">Implement</span>
+            <h2 class="section-title">Implementing a Website</h2>
+            <p>
+              To create a website based on our design works, we used Python, HTML, CSS, and JavaScript on Django framework, using Visual Studio Code.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="image-absolute-box" >
+              <img src="images/becom/becom_code.gif" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section" id="#">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-5 mr-auto">
+            <span class="section-sub-title d-block">Implement</span>
+            <h2 class="section-title">Implementing a Machine Learning Model</h2>
+            <p>
+              I collected <span style="font-weight:600;">36,338</span> sentences that were classified as negative (0) or positive (1). 70% of the sentences were used for training, and the rest were used for testing.<br><br>
+              To classify new sentences into two groups, I used logistic regression algorithm.
+              As a result, the accuracy of the model was 89.17%.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="image-absolute-box" style="margin-top:10%;">
+              <img src="images/becom/becom_MLdata.gif" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
@@ -626,7 +947,7 @@
      
     <footer class="footer-section">
       <div class="container">
-        <div class="row  text-center">
+        <div class="row text-center">
           <div class="col-md-12">
             <h3>Get in Touch</h3>
             <a href="mailto:yeonjikim@ewhain.net" style="color:gray;"><img src="images/email-icon.png" width="40"></a>&nbsp

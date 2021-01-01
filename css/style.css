@@ -18,10 +18,10 @@ a {
   -o-transition: .3s all ease;
   transition: .3s all ease; }
 a:hover {
-    color:#000;
+    color:#9D2721;
     text-decoration:none; }
 
-    
+/*추가*/
 .underline {
   line-height: 1.2;
   background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
@@ -31,6 +31,7 @@ a:hover {
   color: #000;
   cursor: pointer;
 }
+
 @media (min-width: 1000px) {
   .underline {
   }
@@ -42,10 +43,67 @@ a:hover {
   background-size: 100% 100%;
 }
 
+
+#becom-final-design img{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.floating-menu{
+  font-family: sans-serif;
+  padding: 5px;;
+  width: 130px;
+  z-index: 100;
+  position: fixed;
+  bottom: 50%;
+  right: 30px;
+  font-weight: 500;
+  color: #333333 !important;
+  font-size: 0.8rem;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .floating-menu{
+    display: none;
+  }
+}
+
+.floating-top{
+  font-family: sans-serif;
+  padding: 5px;
+  z-index: 100;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 0.8rem;
+}
+.btn-top{
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #9D2721;
+  background-color: ;
+  border-color: #9D2721;
+  padding: 8px 12px;
+  border-width: 2px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5;
+  border-radius: 1.0rem;
+  user-select: none;
+  border: 1px solid transparent;
+}
+@media (max-width: 768px) {
+  .floating-top{
+    display: none;
+  }
+}
+/*여기까지*/
+
+
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
-
+  
 .border-2 {
   border-width: 2px; }
 
@@ -174,7 +232,7 @@ h1, h2, h3, h4, h5,
   .site-footer a {
     color: #999999; }
     .site-footer a:hover {
-      color: black; }
+      color: #9D2721; }
   .site-footer ul li {
     margin-bottom: 10px; }
   .site-footer .footer-heading {
@@ -317,7 +375,7 @@ h1, h2, h3, h4, h5,
     color: #9D2721; }
 
 .site-navbar {
-  margin-bottom: 0px;
+  p-bottom: 0px;
   z-index: 1999;
   position: absolute;
   width: 100%; }
@@ -649,6 +707,7 @@ h1, h2, h3, h4, h5,
     font-size: 1.1rem;}
 
 .img-absolute {
+  pointer-events:none;
   position: absolute;
   right: 10%;
   top: 50%;
@@ -692,6 +751,7 @@ h1, h2, h3, h4, h5,
   margin-bottom: 1.5rem; }
 
 .section-title {
+  font-family: 'Roboto Slab';
   font-size: 2rem;
   color: #000;
   margin-top: 1.8rem;
@@ -722,6 +782,7 @@ h1, h2, h3, h4, h5,
   line-height: 1; }
 
 .image-absolute-box {
+  pointer-events: none;
   position: relative; }
   .image-absolute-box .box {
     position: absolute;
