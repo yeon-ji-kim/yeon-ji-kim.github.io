@@ -44,6 +44,7 @@
         scroll-behavior: smooth;
       }
     </style>
+    <link rel="icon" href="images/yj.png">
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
@@ -63,7 +64,7 @@
       
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo"><a href="index.html">Yeonji</a></div>
+          <div class="site-logo"><a href="index.html"><span style="font-family:'Roboto Slab';">yj</span></a></div>
           <div class="ml-auto">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
@@ -78,6 +79,17 @@
       </div>
       
     </header>
+
+    <!-- highlight 효과
+    <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+      <defs>
+          <filter id="marker-shape">
+              <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+              <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+          </filter>
+      </defs>
+    </svg>
+    -->
 
     <nav class="floating-menu">
       <a href="#becom-overview" class="floating-nav">Overview</a><br>
@@ -114,17 +126,17 @@
         <div class="row">
           <div class="col-lg-4 mr-auto mb-4">
             <div class="">
-              <p><span style="font-weight:600;">Duration</span></b><br>2020.06 - 2020.10</p>
+              <p><span class="bold">Duration</span></b><br>2020.06 - 2020.10</p>
             </div>
             <div class="">
-              <p><span style="font-weight:600;">Team</span><br>Yeonji Kim, Haein Lee, Eunjin Ko, Eunji Kim</p>
+              <p><span class="bold">Team</span><br>Yeonji Kim, Haein Lee, Eunjin Ko, Eunji Kim</p>
             </div>
             <div class="">
-              <p><span style="font-weight:600;">Tools</span><br>Figma<br>Python, Django, HTML, CSS</p>
+              <p><span class="bold">Tools</span><br>Figma<br>Python, Django, HTML, CSS</p>
             </div>
           </div>
           <div class="col-lg-8">
-            <p><span style="font-weight:600;">My Role</span></b><br>I was responsible for our design and technical implementation, as well as managing the overall product roadmap.<br><br>
+            <p><span class="bold">>My Role</span></b><br>I was responsible for our design and technical implementation, as well as managing the overall product roadmap.<br><br>
               📝 UX Analysis (User Flow, Competitor Analysis, IA) 40%<br>
               🖊️ Lo-fi Prototype (Wireframes) 50%<br>
               🖍️ Hi-fi Prototype (UI design) 30%<br>
@@ -151,11 +163,11 @@
           <div class="col-lg-12 mb-5">
             <h2 class="section-title">Challenges</h2>
             <p>
-              After COVID-19, our life has changed in many ways. Having time with our friends became difficult, especially to students.<br>
-              According to a survey of 10,499 teenage students and teachers in Daegu, Korea, due to COVID-19, they are experiencing more emotional and psychological difficulties, such as stress experiences and depression and anxiety.
-              For the reasons of their depression, students mentioned “not being able to have time with friends at school”.
-              Teachers were also having difficulties in teaching students online since they were not able to manage all students, but just delivering one-sided teaching.<br>
-              How might we help students and teachers to overcome difficulties due to COVID-19, such as lack of communication not only between cohorts, but also between students and teachers?
+              During COVID-19, having time with our friends has become difficult, especially to students.
+              According to a survey of 10,499 teenage students and teachers in Daegu, Korea, they have been experiencing <span class="highlight">more emotional and psychological difficulties,</span> such as stress experiences and depression and anxiety, due to COVID-19.
+              For the reasons of their depression, students mentioned <span class="highlight">“not being able to have time with friends at school”</span>.
+              Teachers were also having difficulties in teaching students online since they were not able to manage all students, but just delivering one-sided teaching.<br><br>
+              <span style="font-weight:500;">How might we help students and teachers to overcome difficulties due to COVID-19, such as lack of communication not only between cohorts, but also between students and teachers?</span>
             </p>
           </div>
         </div>
@@ -174,8 +186,8 @@
         <div class="row">
           <div class="col-lg-5 mr-auto mb-5">
               <p><span style="font-weight:700; font-size:1.2rem;">Online Social Networking Platform for Classes</span><br>
-              by connecting with others<br><br>
-            # COVID-19 &nbsp; # Social Networking</p>
+              by connecting with others</p>
+            <p># COVID-19 &nbsp; # Social Networking</p>
             <p>
               <span style="font-weight:700;">FEAETURES</span><br>
               1. Sharing Personal Information<br>
@@ -232,7 +244,7 @@
           </div>
         </div>
         <div class="row" style="margin-bottom:5px;">
-          <div class="col-lg-1" style="text-align: center; font-weight:600;">
+          <div class="col-lg-1 bold" style="text-align: center;">
             01
           </div>
           <div class="col-lg-11">
@@ -240,7 +252,7 @@
           </div>
         </div>
         <div class="row" style="margin-bottom:5px;">
-          <div class="col-lg-1" style="text-align: center; font-weight:600;">
+          <div class="col-lg-1 bold" style="text-align: center;">
             02
           </div>
           <div class="col-lg-11">
@@ -248,7 +260,7 @@
           </div>
         </div>
         <div class="row" style="margin-bottom:5px;">
-          <div class="col-lg-1" style="text-align: center; font-weight:600;">
+          <div class="col-lg-1 bold" style="text-align: center;">
             03
           </div>
           <div class="col-lg-11">
@@ -557,8 +569,8 @@
           <div class="col-lg-6 mr-auto">
             <p>
               We implemented our website by hard-coding and using some libraries and APIs.<br><br>
-              For visualizing analyses from mood trackers, we used <span style="font-weight:600;">wordcloud and Chart.js</span> library. We also added the <span style="font-weight:600;">Face API</span> from Microsoft Cognitive Service, which classifies faces in images into eight emotions.<br><br>
-              To classify sentences in Korean, we used <span style="font-weight:600;">KoNLPy</span>, which analyzes Korean words, and <span style="font-weight:600;">scikit-learn</span>, for building machine learning models.
+              For visualizing analyses from mood trackers, we used <span class="bold">wordcloud and Chart.js</span> library. We also added the <span class="bold">Face API</span> from Microsoft Cognitive Service, which classifies faces in images into eight emotions.<br><br>
+              To classify sentences in Korean, we used <span class="bold">KoNLPy</span>, which analyzes Korean words, and <span class="bold">scikit-learn</span>, for building machine learning models.
             </p>
           </div>
           <div class="col-lg-6">
@@ -596,9 +608,9 @@
             <span class="section-sub-title d-block">Implement</span>
             <h2 class="section-title">Implementing a Machine Learning Model</h2>
             <p>
-              I collected <span style="font-weight:600;">36,338</span> sentences that were classified as negative (0) or positive (1). 70% of the sentences were used for training, and the rest were used for testing.<br><br>
-              To classify new sentences into two groups, I used logistic regression algorithm.
-              As a result, the accuracy of the model was 89.17%.
+              I collected <span class="bold">36,338</span> sentences that were classified as negative (0) or positive (1). 70% of the sentences were used for training, and the rest were used for testing.<br><br>
+              To classify new sentences into two groups, I used <span class="highlight">logistic regression</span> algorithm.
+              As a result, the accuracy of the model was <span class="bold">89.17%</span>.
             </p>
           </div>
           <div class="col-lg-7">
@@ -610,340 +622,7 @@
       </div>
     </div>
 
-    <!--
-    <div class="site-section pf-becom">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 mr-auto mb-5">
-
-            <div class="mb-5">
-              <span class="section-sub-title d-block">Be_com</span>
-              <h2 class="section-title">We Value More on Quality and not in Quantity.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <p><a href="becom.html" class="btn btn-primary py-3 px-5">View More</a></p>
-              </div>
-            </div>
-            
-          </div>
-
-          <div class="col-lg-6">
-            <div class="image-absolute-box" >
-              <div class="box" data-aos="fade-up">
-                <div class="icon-wrap"><span class="flaticon-vector"></span></div>
-                <h3>Creativity is the key</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati commodi aspernatur eum eius inventore facilis.</p>
-              </div>
-              <img src="images/about_1.jpg" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section section-1">
-      
-    
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 mr-auto mb-5">
-
-            <div class="mb-5">
-              <span class="section-sub-title d-block">About Amplify</span>
-              <h2 class="section-title">We Value More on Quality and not in Quantity.</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-6">
-                
-                <div class="counter d-flex align-items-start mb-5" data-aos="fade-up" data-aos-delay="">
-                  <div class="icon-wrap"><span class="flaticon-reload text-primary"></span></div>
-                  <div class="counter-text">
-                    <strong>260</strong>
-                    <span>Fast Loading</span>
-                  </div>
-                </div>
-
-                <div class="counter d-flex align-items-start" data-aos="fade-up" data-aos-delay="100">
-                  <div class="icon-wrap"><span class="flaticon-download text-primary"></span></div>
-                  <div class="counter-text">
-                    <strong>2,500</strong>
-                    <span>No. of Downloads </span>
-                  </div>
-                </div>
-
-              </div>
-              <div class="col-lg-6">
-                
-                <div class="counter d-flex align-items-start mb-5" data-aos="fade-up" data-aos-delay="200">
-                  <div class="icon-wrap"><span class="flaticon-monitor text-primary"></span></div>
-                  <div class="counter-text">
-                    <strong>87</strong>
-                    <span>Number of Person</span>
-                  </div>
-                </div>
-
-                <div class="counter d-flex align-items-start" data-aos="fade-up" data-aos-delay="300">
-                  <div class="icon-wrap"><span class="flaticon-chat text-primary"></span></div>
-                  <div class="counter-text">
-                    <strong>920</strong>
-                    <span>Chat Room</span>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="image-absolute-box" >
-              <div class="box" data-aos="fade-up">
-                <div class="icon-wrap"><span class="flaticon-vector"></span></div>
-                <h3>Creativity is the key</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati commodi aspernatur eum eius inventore facilis.</p>
-              </div>
-              <img src="images/about_1.jpg" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="site-section section-2" id="work-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-5">
-            <span class="section-sub-title d-block">Excellent Work</span>
-            <h2 class="section-title">Our Works</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-      </div>
-        
-
-
-
-
-      <div class="owl-carousel nonloop-block-13">
-
-          <a class="work-thumb" href="images/about_1.jpg" data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Work Name Here</h3>
-              <span class="category">Website</span>
-            </div>
-            <img src="images/about_1.jpg" alt="Image" class="img-fluid">
-          </a> 
-          
-          <a class="work-thumb" href="images/slide_1.jpg"  data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Work Name Here</h3>
-              <span class="category">Illustration</span>
-            </div>
-            <img src="images/slide_1.jpg" alt="Image" class="img-fluid">
-          </a>
-
-          <a class="work-thumb" href="images/slide_2.jpg"  data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Work Name Here</h3>
-              <span class="category">Branding</span>
-            </div>
-            <img src="images/slide_2.jpg" alt="Image" class="img-fluid">
-          </a>
-
-          <a class="work-thumb" href="images/slide_3.jpg"  data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Work Name Here</h3>
-              <span class="category">Web Development</span>
-            </div>
-            <img src="images/slide_3.jpg" alt="Image" class="img-fluid">
-          </a>
-
-          <a class="work-thumb" href="images/slide_4.jpg"  data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Work Name Here</h3>
-              <span class="category">Design</span>
-            </div>
-            <img src="images/slide_4.jpg" alt="Image" class="img-fluid">
-          </a>
-      </div>
-
-    </div>
-
-
-    <div class="site-section section-2" id="process-section" >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-5">
-            <span class="section-sub-title d-block">Our Process</span>
-            <h2 class="section-title">Our Process</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="">
-            <div class="process p-3">
-              <span class="number">01</span>
-              <div>
-                <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Research</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="process p-3">
-              <span class="number">02</span>
-              <div>
-                <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Building</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="process p-3">
-              <span class="number">03</span>
-              <div>
-                <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Launch</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="site-section bg-light" id="services-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 mb-5">
-            <span class="section-sub-title d-block">Services</span>
-            <h2 class="section-title">Services</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-      </div>
-        
-      <div class="owl-carousel nonloop-block-14">
-        
-        <div class="service">
-          <div>
-            <span class="flaticon-reload display-4 text-primary mb-4 d-inline-block"></span>
-            <h3>Auto Reload</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-
-        <div class="service">
-          <div>
-            <span class="flaticon-download display-4 text-primary mb-4 d-inline-block"></span>
-            <h3>Download Videos</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-        <div class="service">
-          <div>
-            <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
-            <h3>Web Development</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-        <div class="service">
-          <div>
-            <span class="flaticon-chat display-4 text-primary mb-4 d-inline-block"></span>
-            <h3>24/7 Support</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-        <div class="service">
-          <div>
-            <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
-            <h3>Research</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-        <div class="service">
-          <div>
-            <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
-            <h3>Creative Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-
-
-
-      </div>
-
-    </div>
-
-
-    <div class="site-section" id="contact-section">
-      <div class="container">
-
-        <div class="row justify-content-center">
-          <div class="col-md-7">
-
-
-            
-            <h2 class="section-title mb-3">Message Us</h2>
-            <p class="mb-5">Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          
-            <form method="post" data-aos="fade">
-              <div class="form-group row">
-                <div class="col-md-6 mb-3 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Last name">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Subject">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="email" class="form-control" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <textarea class="form-control" id="" cols="30" rows="10" placeholder="Write your message here."></textarea>
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-6">
-                  
-                  <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Send Message">
-                </div>
-              </div>
-
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  -->
+    <!--Takeaways-->
   
      
     <footer class="footer-section">
@@ -952,7 +631,7 @@
           <div class="col-md-12">
             <h3>Get in Touch</h3>
             <a href="mailto:yeonjikim@ewhain.net" style="color:gray;"><img src="images/email-icon.png" width="40"></a>&nbsp
-            <a href="https://www.linkedin.com/in/yeonji-kim/" style="color:gray;"><img src="images/linkedin-icon.png" width="40"></a>
+            <a href="https://www.linkedin.com/in/yeonji-kim/" target="_blank" style="color:gray;"><img src="images/linkedin-icon.png" width="40"></a>
           </div>
         </div>
       </div>

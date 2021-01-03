@@ -44,6 +44,7 @@
         scroll-behavior: smooth;
       }
     </style>
+    <link rel="icon" href="images/yj.png">
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
@@ -63,7 +64,7 @@
       
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo"><a href="index.html">Yeonji</a></div>
+          <div class="site-logo"><a href="index.html"><span style="font-family:'Roboto Slab';">yj</span></a></div>
           <div class="ml-auto">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
@@ -79,20 +80,25 @@
       
     </header>
 
+
+    <!-- highlight 효과
     <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
-        <defs>
-            <filter id="marker-shape">
-                <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
-                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
-            </filter>
-        </defs>
+      <defs>
+          <filter id="marker-shape">
+              <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+              <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+          </filter>
+      </defs>
     </svg>
+    -->
 
     <nav class="floating-menu">
       <a href="#grasp-overview" class="floating-nav">Overview</a><br>
-      <a href="#grasp-research" class="floating-nav">Research</a><br>
-      <a href="#grasp-design" class="floating-nav">Design</a><br>
-      <a href="#becom-implementation" class="floating-nav">Implementation</a>
+      <a href="#grasp-user-study" class="floating-nav">User Study</a><br>
+      <a href="#grasp-tool" class="floating-nav">Tool</a><br>
+      <a href="#grasp-findings" class="floating-nav">Findings</a><br>
+      <a href="#grasp-discussion" class="floating-nav">Discussion</a><br>
+      <a href="#grasp-takeaways" class="floating-nav">Takeaways</a>
     </nav>
 
     <div class="floating-top">
@@ -124,22 +130,29 @@
         <div class="row">
           <div class="col-lg-4 mr-auto mb-4">
             <div class="">
-              <p><span style="font-weight:600;">Duration</span></b><br>2019.02 - 2019.10</p>
+              <p><span class="bold">Type</span><br>Thesis Project (Research Track)</p>
             </div>
             <div class="">
-              <p><span style="font-weight:600;">Team</span><br>Yeonji Kim, Kyeongyeon Lee</p>
+              <p><span class="bold">Duration</span></b><br>2019.02 - 2019.10</p>
             </div>
             <div class="">
-              <p><span style="font-weight:600;">Tools</span><br>Adobe XD</p>
+              <p><span class="bold">Team</span><br>Yeonji Kim, Kyeongyeon Lee</p>
+            </div>
+            <div class="">
+              <p><span class="bold">Tools</span><br>Adobe XD<br>Excel, Python</p>
             </div>
           </div>
           <div class="col-lg-8">
-            <p><span style="font-weight:600;">My Role</span></b><br>I was responsible for user research and design of a tool used in the study, as well as managing the overall process.<br><br>
-            📂 Literature Review 50%<br>
-            🖍️ UI Design 100%<br>
-            📋 User Study (Design Methods, Conduct User Study) 80%<br>
-            📊 Data Analysis (Qualitatively and Quantitatively) 60%<br>
-            📄 Thesis 70%</p>
+            <p><span class="bold">My Role</span></b><br>I was responsible for <span class="highlight">user research and design</span> of a tool used in the study, as well as managing the overall process.<br><br>
+            📂 <span style="font-weight:500;">Literature Review</span> 50%<br>
+            🖍️ <span style="font-weight:500;">UI Design</span> 100%<br>
+            📋 <span style="font-weight:500;">User Study</span> (Design Methodology, Conduct User Study) 80%<br>
+            📊 <span style="font-weight:500;">Data Analysis</span> (Qualitatively & Quantitatively) 60%<br>
+            📄 <span style="font-weight:500;">Thesis</span> 70%</p>
+            
+            <div class="">
+              <p><span class="bold">Award</span><br>3rd Place in Ewha Capstone Design Expo</p>
+            </div>
           </div>
         </div>
       </div>
@@ -152,7 +165,11 @@
             <h2 class="section-title">Overview</h2>
             <p>It is difficult for non-experts to build machine learning (ML) models at the level that satisfies their needs. 
                 Deep learning models are even more challenging because it is unclear how to improve the model, and a trial-and-error approach is not feasible since training these models are time-consuming. 
-                To assist these novice users, we examined how <span class="highlight">interactive and explainable feedback </span>while training a deep learning network can contribute to model performance and users’ satisfaction, focusing on the <span class="highlight">data preparation process.</span></p>
+                To assist these novice users, we examined how <span class="highlight">interactive and explainable feedback</span> while training a deep learning network can contribute to model performance and users’ satisfaction, focusing on the <span class="highlight">data preparation process</span>.<br><br>
+                We conducted a user study with <span class="bold">31 participants</span> without expertise, where they were asked to improve the accuracy of a deep learning model, varying feedback conditions. 
+                While no significant performance gain was observed, we identified potential barriers during the process and found that interactive and explainable feedback <span class="highlight">provide complementary benefits for improving users’ understanding of ML</span>. 
+                We conclude with implications for designing an interface for building ML models for novice users.
+              </p>
           </div>
         </div>
       </div>
@@ -168,6 +185,7 @@
             For instance, Yang et al. conducted an interview study to understand how non-experts build ML solutions for themselves in real life and revealed several pitfalls. 
             The major problem was that non-experts rarely tried to understand the internal mechanism of learning algorithms, hence had trouble improving the performance or even gave up their tasks. 
             Also, most of them did not consider the overfitting problem, ending up having poor accuracy on a new dataset.</p>
+            <p class="bold" style="font-size:1.1rem"><span class="highlight">"How can we better assist non-experts with building a deep learning model?"</span></p>
                 <!--
             <br><br><span style="font-size:0.8rem; color:#7d7d7d;">T. Kulesza, M. Burnett, W.-K. Wong, and S. Stumpf, “Principles of explanatory debugging to personalize interactive machine learning,” in Proceedings of the 20th international conference on intelligent user interfaces. ACM, pp. 126–137, 2015. DOI: https://doi.org/10.1145/2678025.2701399<br>
                 T. Kulesza, S. Stumpf, M. Burnett, and I. Kwan, “Tell me more?: the effects of mental model soundness on personalizing an intelligent agent,” in Proceedings of the SIGCHI Conference on Human Factors in Computing Systems. ACM, pp. 1–10, 2012. DOI: https://doi.org/10.1145/2207676.2207678<br>
@@ -179,39 +197,24 @@
       </div>
     </div>
 
-    <div class="site-section" id="solution">
+    <div class="site-section bg-light" id="#">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
-          <div class="col-lg-12">
-            <div class="mb-5">
-              <h2 class="section-title">Solution</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-5 mr-auto mb-5">
-              <p><span style="font-weight:700; font-size:1.2rem;">Online Social Networking Platform for Classes</span><br>
-              by connecting with others<br><br>
-            # COVID-19 &nbsp; # Social Networking</p>
+          <div class="col-lg-12 mb-5">
+            <h2 class="section-title">Our Approach</h2>
+            <p class="mb-3">
+              🏷️ <span class="bold">Interactivity</span> <br>
+              <span style="color:#7d7d7d;">Allowing users to quickly examine the impact of their actions and adapt subsequent inputs to obtain desired behavior when training ML models.</span><br></p>
             <p>
-              <span style="font-weight:700;">FEAETURES</span><br>
-              1. Sharing Personal Information<br>
-              2. Writing Mood-Tracker & Analysis<br>
-              3. Networking with a mate<br>
-              4. Writing posts with classmates<br>
-              5. Applying for psychology counseling
+              🏷️ <span class="bold">Explainability</span><br>
+              <span style="color:#7d7d7d;">Uncovering the process of training or outcomes of an ML system with explanations presented in forms that are easy to understand for human.</span>
             </p>
-          </div>
-          <div class="col-lg-6">
-            <div class="image-absolute-box" >
-              <img src="images/becom/becom_thumbnail.png" alt="Image" class="img-fluid">
-            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section bg-light" id="process">
+    <div class="site-section" id="process">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-5">
@@ -220,98 +223,196 @@
             </div>
           </div>
         </div>
+        <div class="row mb-5">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/grasp_process.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light" id="grasp-user-study">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
-          <div class="col-lg-3"></div>
+          <div class="col-lg-12">
+            <h2 class="section-title" style="color:#9D2721;">User Study</h2>
+            <p>To investigate the effectiveness of interactivity and explainability and to identify potential barriers that non-experts would experience while building their ML systems, we conducted a study with 31 participants who had <span class="bold">little or no ML-related experience</span> where they were asked to use our <span class="bold">custom user interface designed for this study to train an image-based ML model.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light" >
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-title">Experimental Condition</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <p>
+              The user study was conducted under the following <span class="highlight">four conditions</span> to examine if different feedback of a model-building tool have <span class="bold">different effects on the model accuracy as well as users’ understanding of ML.</span>
+            </p>
+          </div>
           <div class="col-lg-6">
             <div class="image-absolute-box" >
-              <img src="images/becom/becom_process.png" alt="Image" class="img-fluid">
+              <img src="images/grasp/grasp_condition.png" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section" id="becom-research">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-12">
-            <span class="section-sub-title d-block">Research</span>
-            <h2 class="section-title">User Survey</h2>
-            <p>To understand the problem at hand, we conducted desk research and collected survey results from teachers and students.<br>
-              &nbsp; 👩‍🏫 23 Teachers & 👨‍🎓 30 Students responded.<br><br>
-              From our research we uncovered that students were deeply empathizing with decrease in interactions with their cohorts during COVID-19 pandemic.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <h2 class="section-title">Takeaways</h2>
-          </div>
-        </div>
-        <div class="row" style="margin-bottom:5px;">
-          <div class="col-lg-1" style="text-align: center; font-weight:600;">
-            01
-          </div>
-          <div class="col-lg-11">
-            For students’ depression, one of the main factor was ‘not being able to interact with their friends’.
-          </div>
-        </div>
-        <div class="row" style="margin-bottom:5px;">
-          <div class="col-lg-1" style="text-align: center; font-weight:600;">
-            02
-          </div>
-          <div class="col-lg-11">
-            Decrease in interactions was attributed to less time to meet their friends face to face.
-          </div>
-        </div>
-        <div class="row" style="margin-bottom:5px;">
-          <div class="col-lg-1" style="text-align: center; font-weight:600;">
-            03
-          </div>
-          <div class="col-lg-11">
-            Interactions or consultation with teachers also diminished, but they were ineffective before the pandemic, too, in that students could not share honest thoughts with their teachers.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Competitive Research-->
-
-    <div class="site-section bg-light" id="affinity">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-12">
-            <span class="section-sub-title d-block">Research</span>
-            <h2 class="section-title">Affinity Diagram</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-7">
-              <p>To conceptualize our product, we wrote down all the effects, emotions, or features we want to achieve and deliver to users, and divided them into similar themes.<br><br>
-              As a result, we decided to focus our values on<br>
-              ✔️ Connectedness, Empathy, Expression, Community<br>
-              ✔️ Practical solutions to problems and dissolve worries<br>
-              ✔️ Lower the barriers for psychology counseling <br>
-              ✔️ Personal space to express and loock back at one’s feelings and thoughts 
-            </p>
-          </div>
-          <div class="col-lg-5">
-            <div class="image-absolute-box" >
-              <img src="images/becom/becom_affinity.jpg" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--Goal-->
-
-    <div class="site-section" id="#">
+    <div class="site-section bg-light" id="#">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-5">
             <div class="mb-5">
-              <h2 class="section-title">Core Functionalities</h2>
+              <h2 class="section-title">Participants</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 mb-3">
+            <p>We recruited participants through a local online community, university board, and word of mouth. 
+              Thirty-four participants applied, but two were excluded as they reported had studied AI or ML before or have worked on related projects (6 or 7 in Table 1) as our target participants were people who are non-experts in ML. 
+              The <span class="bold">rest 32 participants were distributed between 1 and 5</span> (see Table 1) and reported 2.3 on average. <br>
+              Table 2 shows the demographics of 31 participants after removing one outlier, where the accuracy performance of the model that the participant built was beyond 3 standard deviations of the mean, throughout the study. 
+              Their age range was between 18 to 56, and each participant was randomly assigned to one of the four conditions.
+            </p>
+          </div>
+          <div class="col-lg-6 mb-3">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/grasp_table1.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-6 mb-3">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/grasp_table2.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light" id="grasp-tool">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-12 mb-5">
+            <h2 class="section-title">Apparatus</h2>
+            <p>
+              To observe how non-experts create ML systems, we <span class="bold">implemented a web-based system, Grasp,</span> that allows users to <span class="highlight">iteratively import, review, refine the training dataset, and evaluate</span> their trained models to build a deep learning network for image classification.
+            </p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-4">
+            <span class="section-sub-title d-block" style="font-size:1.0rem;">Initial Tool Design</span>
+          </div>
+          <div class="col-lg-8">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/grasp_initial_design.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <span class="section-sub-title d-block" style="font-size:1.0rem;">Actual Tool Design</span>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              <span class="bold" style="font-size:1.1rem;">Interactive Feedback</span><br>
+              ✔️ <span class="bold">Red-bordered box</span>: misclassified images to users by having a bounding box with red borderlines (1b1)<br>
+              ✔️ <span class="bold">Interactive box</span>: classification results with confidences of the current ML model instantly for a selected image (1c1) <br>
+              <br>
+              <span class="bold" style="font-size:1.1rem;">Explainable Feedback</span><br>
+              ✔️ <span class="bold">Activation map</span>: visualizes the areas of input that are important for predictions (1c2), shows how an image is evaluated in the pre-trained ImageNet model<br>
+              ✔️ <span class="bold">Confidence table</span>: Top 5 recognition results with the highest confidences based on the same model (1c3) to convey the estimated performance of their model<br>
+              ✔️ <span class="bold">Model description</span>: provided after users train their model — specifies the number of misclassified images in each class.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/grasp_actual_design.png" alt="Image" class="img-fluid">
+            </div>
+            <p style="color:#7d7d7d; font-size:0.8rem; text-align: right;"><i>Full condition with interactive and explainable feedback</i></p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <span class="section-sub-title d-block" style="font-size:1.0rem;">System Overview</span>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Our apparatus consists of <span class="bold">two ML models</span>; the primary is <span class="highlight">MobileNetV2</span> that is retrainable and additionally <span class="highlight">VGG16</span>. <br>
+              We used MobileNetV2 as the primary model and applied <span class="bold">transfer learning</span> to create image classifiers and generate feedback as quickly as possible by training only a part of the pre-built ML model with smaller number of classes.
+              We also had another VGG16 model to visualize the activation map and show the confidence table since generating the activation map is time-consuming (50-60 seconds per image).
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/figure1.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light" >
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-title">Procedure</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-6">
+            <p>
+              The study was conducted as a one-hour single-session study consisting of a <span class="bold">pretest</span>, a <span class="bold">data preparation task</span> for building a deep learning model, and a <span class="bold">posttest</span> followed by an interview. As a between-subject test, participants were assigned to one of the four conditions for the data preparation task.
+            </p>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/grasp_procedure.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <span class="section-sub-title d-block" style="font-size:1.0rem;">Pretest</span>
+            <p class="mb-5">Before performing the data preparation task for building a model, we presented <span class="bold">two ML application scenarios</span> (i.e., image classification, speech recognition), and asked participants to <span class="highlight">explain what kind of dataset would be needed to make such ML systems with high accuracy for each.</span></p>
+            <span class="section-sub-title d-block" style="font-size:1.0rem;">Data Preparation Task</span>
+            <p class="mb-5">
+              For the main task, we first played video tutorials that explain the basic concepts of ML as well as the instructions on how to use our custom interface for performing the task. 
+              They were given 3 minutes to explore the interface themselves, such as importing and deleting images and training a model. <br>
+              After this brief introduction, participants were instructed to <span class="highlight">add or remove images per class</span> using the web interface <span class="highlight">to improve the accuracy of the initial model as high as possible</span> within 30 minutes. 
+              They were allowed to train and check the current model’s accuracy up to <span class="bold">three times</span>, which can be done by clicking the "Training" button on the top right of the interface. 
+              Once the training is completed, participants were able to check the results such as <span class="highlight">training accuracy and validation accuracy</span> on a new page. To understand participants’ mental model, we used a <span class="bold">think-aloud protocol</span> throughout the task and <span class="bold">collected participants’ feedback before and after checking the training results</span> by asking <span class="bold">how they prepared their data and what they think about the results</span>.
+            </p>
+            <span class="section-sub-title d-block" style="font-size:1.0rem;">Posttest & Interview</span>
+            <p>
+              After the task completion, we had a posttest session where we asked participants the <span class="bold">same questions</span> again with the two scenarios from our pretest to examine if <span class="highlight">participants’ understanding of ML systems has improved after performing our task</span>. 
+              Then we had a wrap-up interview to <span class="highlight">understand the potential barriers</span> for preparing a dataset for an ML model and how the presented interactive or explainable feedback can be used to ease the training process. 
+              We also asked participants about their satisfaction, usefulness, the difficulty of each feature they used as well as perceived task load (NASA-TLX) on a 7-point scale.
+            </p>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light" id="#">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="mb-5">
+              <h2 class="section-title">Data & Analysis</h2>
             </div>
           </div>
         </div>
@@ -328,11 +429,11 @@
       </div>
     </div>
 
-    <div class="site-section" id="#">
+    <div class="site-section bg-light" id="#">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-5 mr-auto mb-5">
-            <h2 class="section-title">Information Architecture</h2>
+            <h2 class="section-title">Data Analysis</h2>
           </div>
           <div class="col-lg-7">
             <div class="image-absolute-box" >
@@ -343,12 +444,11 @@
       </div>
     </div>
 
-    <div class="site-section bg-light" id="becom-design">
+    <div class="site-section bg-light" id="grasp-findings">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-6 mr-auto">
-            <span class="section-sub-title d-block">Design</span>
-            <h2 class="section-title">Sketches</h2>
+            <h2 class="section-title">Findings</h2>
             <p>
               We began ideation process by sketching out different layout options and interaction patterns for the main functionalities.
             </p>
@@ -362,271 +462,57 @@
       </div>
     </div>
 
-    <div class="site-section bg-light" id="#">
+    <div class="site-section bg-light" id="grasp-discussion">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-12 mr-auto">
-            <span class="section-sub-title d-block">Design</span>
-            <h2 class="section-title">Low-Fidelity Mockups</h2>
-            <p>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="image-absolute-box" >
-              <img src="images/becom/becom_low_1.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <div class="image-absolute-box" >
-              <img src="images/becom/becom_low_2.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="image-absolute-box" >
-              <img src="images/becom/becom_low_3.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="image-absolute-box" >
-              <img src="images/becom/becom_low_4.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="image-absolute-box" >
-              <img src="images/becom/becom_low_5.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="image-absolute-box" >
-              <img src="images/becom/becom_low_6.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section bg-light" id="becom-final-design">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-12 mr-auto">
-            <span class="section-sub-title d-block">Design</span>
-            <h2 class="section-title">Final Design</h2>
-            <p>
-            </p>
-          </div>
-        </div>
-        <div class="row mb-5">
-          <div class="col-lg-12">
-            <div class="image-absolute-box" >
-              <img src="images/becom/becom_mockup.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-        <div class="row mb-3">
-          <div class="col-lg-4">
-            <div class="row justify-content-center">
-              <span class="section-sub-title d-block">Design</span>
-            </div>
-            <div class="row">
-              <div class="image-absolute-box" >
-                <img src="images/becom/Final_Main.png" alt="Image" class="img-fluid">
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="row justify-content-center">
-              <span class="section-sub-title d-block">Profile</span>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="image-absolute-box" >
-                  <img src="images/becom/Final_Profile.png" alt="Image" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="image-absolute-box" >
-                  <img src="images/becom/Final_Profile_Personal.png" alt="Image" class="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-5">
-          <div class="col-lg-12">
-            <div class="row justify-content-center">
-              <span class="section-sub-title d-block">Mood Tracker</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-4">
-              <div class="image-absolute-box" >
-                <img src="images/becom/Final_MoodTracker_Write.png" alt="Image" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="image-absolute-box" >
-                <img src="images/becom/Final_MoodTracker_Analysis.png" alt="Image" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-lg-2"></div>
-          </div>
-        </div>
-
-        <div class="row mb-5">
-          <div class="col-lg-12">
-            <div class="row justify-content-center">
-              <span class="section-sub-title d-block">Mate</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="image-absolute-box" >
-                <img src="images/becom/Final_Mate.png" alt="Image" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="image-absolute-box" >
-                <img src="images/becom/Final_Mate_Gallery.png" alt="Image" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="image-absolute-box" >
-                <img src="images/becom/Final_Mate_Task.png" alt="Image" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-5">
-          <div class="col-lg-12">
-            <div class="row justify-content-center">
-              <span class="section-sub-title d-block">Forum</span>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="image-absolute-box" >
-                <img src="images/becom/Final_Forum.png" alt="Image" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="image-absolute-box" >
-                <img src="images/becom/Final_Forum_View.png" alt="Image" class="img-fluid">
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="image-absolute-box" >
-                <img src="images/becom/Final_Forum_Write.png" alt="Image" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-3">
-          <div class="col-lg-8">
-            <div class="row justify-content-center">
-              <span class="section-sub-title d-block">Counseling</span>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="image-absolute-box" >
-                  <img src="images/becom/Final_Therapy.png" alt="Image" class="img-fluid">
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="image-absolute-box" >
-                  <img src="images/becom/Final_Therapy_Done.png" alt="Image" class="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="row justify-content-center">
-              <span class="section-sub-title d-block">Teachers</span>
-            </div>
-            <div class="row">
-              <div class="image-absolute-box" >
-                <img src="images/becom/Final_Teacher.png" alt="Image" class="img-fluid">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section" id="becom-implementation">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-12 mr-auto">
-            <span class="section-sub-title d-block">Implement</span>
-            <h2 class="section-title">System Architecture</h2>
-          </div>
-        </div>
         <div class="row">
           <div class="col-lg-6 mr-auto">
+            <h2 class="section-title">Discussion</h2>
             <p>
-              We implemented our website by hard-coding and using some libraries and APIs.<br><br>
-              For visualizing analyses from mood trackers, we used <span style="font-weight:600;">wordcloud and Chart.js</span> library. We also added the <span style="font-weight:600;">Face API</span> from Microsoft Cognitive Service, which classifies faces in images into eight emotions.<br><br>
-              To classify sentences in Korean, we used <span style="font-weight:600;">KoNLPy</span>, which analyzes Korean words, and <span style="font-weight:600;">scikit-learn</span>, for building machine learning models.
+              We began ideation process by sketching out different layout options and interaction patterns for the main functionalities.
             </p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-5">
             <div class="image-absolute-box" >
-              <img src="images/becom/becom_system_architecture.png" alt="Image" class="img-fluid">
+              <img src="images/becom/becom_sketches.jpg" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section bg-light" id="#">
+    <div class="site-section" id="grasp-takeaways">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
-          <div class="col-lg-5 mr-auto">
-            <span class="section-sub-title d-block">Implement</span>
-            <h2 class="section-title">Implementing a Website</h2>
+          <div class="col-lg-6 mr-auto">
+            <span class="section-sub-title d-block">Reflection</span>
+            <h2 class="section-title">Takeaways</h2>
             <p>
-              To create a website based on our design works, we used Python, HTML, CSS, and JavaScript on Django framework, using Visual Studio Code.
+              We began ideation process by sketching out different layout options and interaction patterns for the main functionalities.
             </p>
           </div>
-          <div class="col-lg-7">
+          <div class="col-lg-5">
             <div class="image-absolute-box" >
-              <img src="images/becom/becom_code.gif" alt="Image" class="img-fluid">
+              <img src="images/becom/becom_sketches.jpg" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section" id="#">
+    <div class="site-section" id="">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
-          <div class="col-lg-5 mr-auto">
-            <span class="section-sub-title d-block">Implement</span>
-            <h2 class="section-title">Implementing a Machine Learning Model</h2>
-            <p>
-              I collected <span style="font-weight:600;">36,338</span> sentences that were classified as negative (0) or positive (1). 70% of the sentences were used for training, and the rest were used for testing.<br><br>
-              To classify new sentences into two groups, I used logistic regression algorithm.
-              As a result, the accuracy of the model was 89.17%.
-            </p>
+          <div class="col-lg-2 mr-auto" style="font-size: 0.9rem; font-weight:500;">
+            <a href="" style="color:#333333;">🡠 See previous project</a>
           </div>
-          <div class="col-lg-7">
-            <div class="image-absolute-box" style="margin-top:10%;">
-              <img src="images/becom/becom_MLdata.gif" alt="Image" class="img-fluid">
-            </div>
+          <div class="col-lg-8 mr-auto">
+          </div>
+          <div class="col-lg-2 mr-auto" style="font-size: 0.9rem; font-weight:500;">
+              <a href="" style="color:#333333;">See next project 🡢</a>
           </div>
         </div>
       </div>
     </div>
-  
      
     <footer class="footer-section">
       <div class="container">
@@ -634,7 +520,7 @@
           <div class="col-md-12">
             <h3>Get in Touch</h3>
             <a href="mailto:yeonjikim@ewhain.net" style="color:gray;"><img src="images/email-icon.png" width="40"></a>&nbsp
-            <a href="https://www.linkedin.com/in/yeonji-kim/" style="color:gray;"><img src="images/linkedin-icon.png" width="40"></a>
+            <a href="https://www.linkedin.com/in/yeonji-kim/" target="_blank" style="color:gray;"><img src="images/linkedin-icon.png" width="40"></a>
           </div>
         </div>
       </div>
