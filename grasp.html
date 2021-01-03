@@ -97,8 +97,7 @@
       <a href="#grasp-user-study" class="floating-nav">User Study</a><br>
       <a href="#grasp-tool" class="floating-nav">Tool</a><br>
       <a href="#grasp-findings" class="floating-nav">Findings</a><br>
-      <a href="#grasp-discussion" class="floating-nav">Discussion</a><br>
-      <a href="#grasp-takeaways" class="floating-nav">Takeaways</a>
+      <a href="#grasp-reflections" class="floating-nav">Reflections</a>
     </nav>
 
     <div class="floating-top">
@@ -130,7 +129,7 @@
         <div class="row">
           <div class="col-lg-4 mr-auto mb-4">
             <div class="">
-              <p><span class="bold">Type</span><br>Thesis Project (Research Track)</p>
+              <p><span class="bold">Type</span><br>Capstone Project (Research Track)</p>
             </div>
             <div class="">
               <p><span class="bold">Duration</span></b><br>2019.02 - 2019.10</p>
@@ -301,8 +300,8 @@
     </div>
 
     <div class="site-section bg-light" id="grasp-tool">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
+      <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 mb-5">
             <h2 class="section-title">Apparatus</h2>
             <p>
@@ -310,7 +309,7 @@
             </p>
           </div>
         </div>
-        <div class="row mb-5">
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-4">
             <span class="section-sub-title d-block" style="font-size:1.0rem;">Initial Tool Design</span>
           </div>
@@ -320,7 +319,7 @@
             </div>
           </div>
         </div>
-        <div class="row mb-5">
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12">
             <span class="section-sub-title d-block" style="font-size:1.0rem;">Actual Tool Design</span>
           </div>
@@ -343,7 +342,7 @@
             <p style="color:#7d7d7d; font-size:0.8rem; text-align: right;"><i>Full condition with interactive and explainable feedback</i></p>
           </div>
         </div>
-        <div class="row mb-5">
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12">
             <span class="section-sub-title d-block" style="font-size:1.0rem;">System Overview</span>
           </div>
@@ -417,89 +416,154 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4">
-            <p>To deliver our values, we set five main functions. Each of them has a meaning of connection.</p>
-          </div>
-          <div class="col-lg-8">
+          <div class="col-lg-6">
             <div class="image-absolute-box" >
-              <img src="images/becom/becom_functions.png" alt="Image" class="img-fluid">
+              <img src="images/grasp/data.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/analysis.png" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section bg-light" id="#">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-5 mr-auto mb-5">
-            <h2 class="section-title">Data Analysis</h2>
+    <div class="site-section" id="grasp-findings">
+      <div class="container">
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 mr-auto">
+            <h2 class="section-title" style="color:#9D2721;">Findings</h2>
+            <p>
+              Here we present the potential effects of interactive and explainable feedback in terms of accuracy, the understanding of ML, and subjective responses collected from participants for each feedback feature.
+            </p>
+          </div>
+        </div>
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 mr-auto">
+            <div class="process p-3">
+              <span class="number">01</span>
+              <div>
+                <h2 class="section-title">Understanding of Novices</h2>
+                <p class="bold" style="font-size: 1.1rem;">The Understanding of Building a Better ML Model</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <p>To examine if participants’ understanding of constructing ML models has been improved after performing the task, one researcher graded participants’ pretest and posttest responses where the participants’ group was blinded. 
+              For each scenario per test, responses of participants were given a score between 0 and 4 depending on how much they are aware of the fact that <span class="highlight">increasing volume</span> and <span class="highlight">variety of training data</span> can help to improve the accuracy (2 scores each per metric). 
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <p>
+            As a result, we found that <span class="bold">participants’ understanding of how data should be prepared to improve the accuracy of an ML model has been improved for all conditions</span>. 
+            Participants in <span class="bold">full condition showed the biggest improvements</span> on average, followed by explainable, default, and interactive conditions. 
+            <br><br>
+            Interestingly, while the performed task is about image classification, the scores suggest that building an image classification model can also <span class="highlight">help to deepen the understanding of the speech recognition model</span>.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/finding1.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 mr-auto">
+            <div class="process p-3">
+              <span class="number">02</span>
+              <div>
+                <h2 class="section-title">Feedback Features</h2>
+                <p class="bold" style="font-size: 1.1rem;">The Use and Subjective Assessments of Feedback Features</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <p>We further assessed how each feature for each feedback type assisted participants in preparing a dataset for building ML models by analyzing participants’ subjective feedback such as contribution (i.e., how much this feature has contributed to their decision when preparing the data) and usefulness at the end of the study. 
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/IN_features.png" alt="Image" class="img-fluid">
+            </div>
           </div>
           <div class="col-lg-7">
             <div class="image-absolute-box" >
-              <img src="images/becom/becom_IA.png" alt="Image" class="img-fluid">
+              <img src="images/grasp/EP_features.png" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="site-section bg-light" id="grasp-findings">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-6 mr-auto">
-            <h2 class="section-title">Findings</h2>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 mr-auto">
+            <div class="process p-3">
+              <span class="number">03</span>
+              <div>
+                <h2 class="section-title">Observed Behaviors</h2>
+                <p class="bold" style="font-size: 1.1rem;">Perceived Task Loads and Observed Behaviors of Novices</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <span class="section-sub-title d-block" style="font-size:1.0rem;">Perceived Task Load</span>
+          </div>
+          <div class="col-lg-7">
             <p>
-              We began ideation process by sketching out different layout options and interaction patterns for the main functionalities.
+              When compared to the responses collected from experts, we have confirmed that mental demand is slightly higher for participants. On the other hand, other responses were similar, including effort. This suggests that novice users’ perceived task load is not too different from experts except for mental demand.
             </p>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-4 mb-3">
             <div class="image-absolute-box" >
-              <img src="images/becom/becom_sketches.jpg" alt="Image" class="img-fluid">
+              <img src="images/grasp/NASA-TLX.png" alt="Image" class="img-fluid">
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section bg-light" id="grasp-discussion">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-6 mr-auto">
-            <h2 class="section-title">Discussion</h2>
+          <div class="col-lg-12 mb-5">
+            <span class="section-sub-title d-block" style="font-size:1.0rem;">Amount of Data Novices Prepared</span>
             <p>
-              We began ideation process by sketching out different layout options and interaction patterns for the main functionalities.
+              <span class="highlight">The number of images that participants used for training varied.</span> More than half of the participants started with 20-40 images per class and maintained the number throughout the task (N = 17) while the other 6 participants gradually increase or decrease the number of training data. This is contrary to the behavior of experts who started training the model with a large volume of data. In the study, only the remaining eight added images as many as possible from the start, assuming that adding many images would increase the accuracy, especially for F8, who related the performance with the word ‘big data.’
             </p>
           </div>
-          <div class="col-lg-5">
-            <div class="image-absolute-box" >
-              <img src="images/becom/becom_sketches.jpg" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section" id="grasp-takeaways">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-6 mr-auto">
-            <span class="section-sub-title d-block">Reflection</span>
-            <h2 class="section-title">Takeaways</h2>
+          <div class="col-lg-12">
+            <span class="section-sub-title d-block" style="font-size:1.0rem;">Tendency to Over-clean the Data</span>
             <p>
-              We began ideation process by sketching out different layout options and interaction patterns for the main functionalities.
+              To understand users’ mental models, we observed how participants built their ML models while they are performing the task. 
+              As a result, we found that participants had a <span class="highlight">tendency to clean the data as much as possible</span> without knowing that this <span class="bold">can cause an overfitting problem</span>. 
+              To be specific, participants tended to remove images if dogs with different breeds or people are included for the selected class even if the correct dog is present. 
+              This behavior was more <span class="bold">frequently observed</span> from the participants in <span class="bold">default condition</span>, which had the minimum feedback without interactive nor explainable feedback. 
+              Moreover, when adding new pictures, most participants added images if and only if the images are <span class="highlight">representative of that class</span>, such as images where the frontal face of a single dog with the correct breed is visible. 
+              This indicates that non-expert users believe that having only the representative data can lead to higher accuracy without knowing that their model would not perform well on real-world data with large variations (noises).
             </p>
           </div>
-          <div class="col-lg-5">
-            <div class="image-absolute-box" >
-              <img src="images/becom/becom_sketches.jpg" alt="Image" class="img-fluid">
-            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-light" id="grasp-reflections">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-title">Reflections</h2>
+            <span class="section-sub-title d-block" style="font-size:1.0rem; color:#333333;">Working on a Research Project for the First Time</span>
+            <p class="mb-5">
+              Working on a research project, and even leading a team of two, requires being able to be precise in designing methodology, writing a tool guide for participants, and managing all the data from the study.
+              I also realized that there are many kinds of variables that can happen during the experiment. Do not try to predict users! 
+              After many iterations of pilot studies, I could see how users utilize the system, which may have been different with our purpose. 
+              But that was the most exciting part of the user research!
+            </p>
+            <span class="section-sub-title d-block" style="font-size:1.0rem; color:#333333;">What's Essential for MVP?</span>
+            <p>
+              Since we had time limitation for implementing the tool, we had difficulties in building interpretable deep learning systems, which were complicated and time-consuming.
+              As an alternative, we took confidence tables as our explainable features.
+              Even though the outcome turned different from what we have planned, I learned that making time-efficient choices and compromising is necessary for teams to move on.
+            </p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section" id="">
+    <div class="site-section bg-light" id="">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-2 mr-auto" style="font-size: 0.9rem; font-weight:500;">
