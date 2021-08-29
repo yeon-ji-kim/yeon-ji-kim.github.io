@@ -36,7 +36,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <link href="./pointer.css" rel="stylesheet">
+    <!--<link href="./pointer.css" rel="stylesheet">-->
     
     <style>
       html {
@@ -87,7 +87,7 @@
             <p class="mb-5" style="font-size:1.0rem;">I design and code to make more sustainable societies <br>
               and <span class="yellow underline">engage with people who have different perspectives and abilities.</span><br><br>
               currently studying HCI, UX Design and Research <a href="https://www.si.umich.edu/" target="_blank">@University of Michigan - School of Information</a></p>
-            <p><a href="#pf-becom" class="btn btn-primary py-3 px-5">View Works</a></p>
+            <p><a href="#pf-becom" class="btn btn-primary py-3 px-5" id="cursor">View Works</a></p>
           </div>
         </div>
       </div>
@@ -111,7 +111,7 @@
             </div>
             <div class="row">
               <div class="col-lg-6">
-                <p><a href="becom.html" class="btn btn-primary py-3 px-5">View More</a></p>
+                <p><a href="becom.html" class="btn btn-primary py-3 px-5" id="cursor">View More</a></p>
               </div>
             </div>
           </div>
@@ -125,7 +125,7 @@
         <div class="row" data-aos="fade-up">
 
           <div class="col-lg-6">
-            <a href="grasp.html"></a><div class="image-absolute-box" >
+            <a href="grasp.html"><div class="image-absolute-box" >
               <img src="images/grasp/grasp_thumbnail.png" alt="Image" class="img-fluid">
             </div></a>
           </div>
@@ -138,7 +138,7 @@
             </div>
             <div class="row">
               <div class="col-lg-6">
-                <p><a href="grasp.html" class="btn btn-primary py-3 px-5">View More</a></p>
+                <p><a href="grasp.html" class="btn btn-primary py-3 px-5" id="cursor">View More</a></p>
               </div>
             </div>
           </div>
@@ -502,16 +502,4 @@
   <script src="js/main.js"></script>
     
   </body>
-  <script src="./pointer.js"></script>
-  <script>
-    init_pointer();
-    init_pointer({
-      pointerColor: "#9d2721"
-    })
-    init_pointer({
-      pointerColor: "#9d2721",
-      ringSize: 20,
-      ringClickSize: 10
-    })
-  </script>
 </html>

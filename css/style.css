@@ -16,10 +16,17 @@ body {
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
-  transition: .3s all ease; }
+  transition: .3s all ease;
+ }
 a:hover {
     color:#9D2721;
-    text-decoration:none; }
+    text-decoration:none; 
+    cursor: url(/images/click.png), auto;
+}
+
+#cursor:hover {
+  cursor: url(/images/click.png), auto;
+}
 
 /*추가*/
 .bold{
@@ -33,7 +40,6 @@ a:hover {
   background-size: 0% 100%;
   transition: background-size 0.8s;
   color: #000;
-  cursor: pointer;
 }
 
 @media (min-width: 1000px) {
@@ -85,7 +91,7 @@ a:hover {
   text-transform: uppercase;
   font-weight: 600;
   color: #9D2721;
-  background-color: ;
+  /*background-color: ;*/
   border-color: #9D2721;
   padding: 8px 12px;
   border-width: 2px;
@@ -147,13 +153,13 @@ a:hover {
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
-  cursor: pointer;
+  cursor:  url(/images/view.png), auto;;
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
-  cursor: pointer;
+  cursor:  url(/images/view.png), auto;;
   position: absolute;
   top: 40%;
   width: auto;
@@ -265,6 +271,7 @@ h1, h2, h3, h4, h5,
     visibility: visible; }
 
 .btn {
+  cursor: url(/images/view.png), auto;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 900; }
@@ -612,7 +619,7 @@ h1, h2, h3, h4, h5,
       .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
         color: #9D2721; }
       .site-navbar .site-navigation .site-menu .has-children:hover, .site-navbar .site-navigation .site-menu .has-children:focus, .site-navbar .site-navigation .site-menu .has-children:active {
-        cursor: pointer; }
+        cursor:  url(/images/view.png), auto;; }
         .site-navbar .site-navigation .site-menu .has-children:hover > .dropdown, .site-navbar .site-navigation .site-menu .has-children:focus > .dropdown, .site-navbar .site-navigation .site-menu .has-children:active > .dropdown {
           -webkit-transition-delay: 0s;
           -o-transition-delay: 0s;
@@ -657,7 +664,7 @@ h1, h2, h3, h4, h5,
         padding-left: 10px;
         padding-right: 0px;
         line-height: 1;
-        cursor: pointer;
+        cursor:  url(/images/view.png), auto;;
         -webkit-transition: .3s all ease;
         -o-transition: .3s all ease;
         transition: .3s all ease; }
@@ -721,7 +728,7 @@ h1, h2, h3, h4, h5,
       width: 36px;
       height: 36px;
       text-align: center;
-      cursor: pointer;
+      cursor:  url(/images/view.png), auto;;
       border-radius: 50%; }
       .site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
         background: #f8f9fa; }
@@ -960,7 +967,7 @@ h1, h2, h3, h4, h5,
 .work-thumb {
   position: relative;
   display: block;
-  cursor: pointer; }
+  cursor:  url(/images/view.png), auto;; }
   .work-thumb:after {
     position: absolute;
     top: 0;
