@@ -154,6 +154,54 @@ a:hover {
   height: 100%;
 }
 
+/* Home - Images Stacked */
+.image-stack {
+  display: grid;
+  position: relative; /* imperative for the overlapping to work */
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.image-stack__item--bottom {
+  grid-column: 7 / span 5 ;
+  grid-row: 1;
+  padding-top: 40%;
+  z-index: -1;
+}
+
+.image-stack__item--mid {
+  grid-column: 3 / span 6;
+  grid-row: 1;
+  padding-top: 90%; 
+  z-index: 0;
+}
+
+.image-stack__item--top {
+  grid-row: 1;
+  grid-column: 1 / span 5;
+  padding-top: 20%; /* slightly arbitrary, keeps proportion once resized */
+  z-index: 1; /* tells the browser to make this image on top*/
+}
+
+.image-stack img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+/* Home - Image Link Hover Zoom */
+.imgzoom {
+  overflow: hidden;
+}
+ 
+.imgzoom img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+ 
+.imgzoom:hover img {
+  transform: scale(1.1);
+}
+
 /* MORE - Project List */
 .more_ctg{
   font-style: italic;
@@ -919,7 +967,7 @@ h1, h2, h3, h4, h5,
 .home-section{
   position: relative; }
   .home-section, .home-section .container .row {
-    height: 60vh;
+    height: 80vh;
     min-height: 400px; }
   .home-section .col-lg-12 {
     padding-top: 10%;
