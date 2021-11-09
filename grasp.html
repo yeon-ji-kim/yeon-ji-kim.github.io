@@ -71,7 +71,7 @@
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="index.html" class="nav-link">Work</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="YeonjiKim_CV.pdf" target="_blank" class="nav-link">Resume</a></li>
+                <li><a href="resume.html" target="_blank" class="nav-link">Resume</a></li>
               </ul>
             </nav>
             <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
@@ -224,15 +224,60 @@
           <div class="col-lg-12 mb-5">
             <h2 class="section-title">Our Approach</h2>
             <p class="mb-3">
-              After reviewing previous research, we decided to use the concept of <span class="bold">Interactive Machine Learning</span> and <span class="bold">Explainable Machine Learning</span> <br>to better assist novice users with the tool.<br><br>
+              To better assist novice users with building a deep learning model, we decided to use the concept of <span class="bold">Interactive Machine Learning</span> and <span class="bold">Explainable Machine Learning</span> from previous research.<br><br><br>
 
-              <span class="bold">Our definition for each concept:</span> <br><br>
+              <span class="bold">Our definition for each concept:</span><br><br>
               🏷️ <span class="bold">Interactivity</span> <br>
               <span style="color:#7d7d7d;">Allowing users to quickly examine the impact of their actions and adapt subsequent inputs to obtain desired behavior when training ML models.</span><br></p>
             <p>
               🏷️ <span class="bold">Explainability</span><br>
               <span style="color:#7d7d7d;">Uncovering the process of training or outcomes of an ML system with explanations presented in forms that are easy to understand for human.</span>
             </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-title">Key Features</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <p>With the defined concept, we devised interactive and explainable features that would help users in building machine learning models. In our research, we called them 'feedback'.</p>
+            <p>
+              <span class="bold">Interactive Feedback</span><br>
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="grasp-feedback">
+              <span class="bold">Mark misclassified images</span><br>Distinguish misclassified images from training in the list of dataset<br>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="grasp-feedback">
+              <span class="bold">Interactive Box</span><br>Provides classification results with percentage of the current ML model for a selected image <br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              <span class="bold">Explainable Feedback</span><br>
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <div class="grasp-feedback">
+              <span class="bold">Activation Map</span><br>Visualizes the areas in an image that are important<br>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="grasp-feedback">
+              <span class="bold">Confidence Table</span><br>Top 5 recognition results with the highest confidences based on the same model<br>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="grasp-feedback">
+              <span class="bold">Model Description</span><br>Provides specifies the number of misclassified images in each class<br>
+            </div>
           </div>
         </div>
       </div>
@@ -319,46 +364,6 @@
           <div class="col-lg-8">
             <div class="image-absolute-box" >
               <img src="images/grasp/grasp_initial_design.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12">
-            <span class="section-sub-title d-block" style="font-size:1.0rem;">Actual Tool Design</span>
-          </div>
-          <div class="col-lg-6">
-            <p>
-              <span class="bold" style="font-size:1.1rem;">Interactive Feedback</span><br>
-              ✔️ <span class="bold">Red-bordered box</span>: misclassified images to users by having a bounding box with red borderlines (1b1)<br>
-              ✔️ <span class="bold">Interactive box</span>: classification results with confidences of the current ML model instantly for a selected image (1c1) <br>
-              <br>
-              <span class="bold" style="font-size:1.1rem;">Explainable Feedback</span><br>
-              ✔️ <span class="bold">Activation map</span>: visualizes the areas of input that are important for predictions (1c2), shows how an image is evaluated in the pre-trained ImageNet model<br>
-              ✔️ <span class="bold">Confidence table</span>: Top 5 recognition results with the highest confidences based on the same model (1c3) to convey the estimated performance of their model<br>
-              ✔️ <span class="bold">Model description</span>: provided after users train their model — specifies the number of misclassified images in each class.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/grasp_actual_design.png" alt="Image" class="img-fluid">
-            </div>
-            <p style="color:#7d7d7d; font-size:0.8rem; text-align: right;"><i>Full condition with interactive and explainable feedback</i></p>
-          </div>
-        </div>
-        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12">
-            <span class="section-sub-title d-block" style="font-size:1.0rem;">System Overview</span>
-          </div>
-          <div class="col-lg-7">
-            <p>
-              Our apparatus consists of <span class="bold">two ML models</span>; the primary is <span class="highlight">MobileNetV2</span> that is retrainable and additionally <span class="highlight">VGG16</span>. <br>
-              We used MobileNetV2 as the primary model and applied <span class="bold">transfer learning</span> to create image classifiers and generate feedback as quickly as possible by training only a part of the pre-built ML model with smaller number of classes.
-              We also had another VGG16 model to visualize the activation map and show the confidence table since generating the activation map is time-consuming (50-60 seconds per image).
-            </p>
-          </div>
-          <div class="col-lg-5">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/figure1.png" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
