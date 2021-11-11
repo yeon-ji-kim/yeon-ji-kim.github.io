@@ -226,7 +226,14 @@ a:hover {
       border-color: orange; 
   }
 }
-
+@media (max-width: 768px) {
+  .textp{
+    font-size:1.2rem;
+  }
+  .home-section p {
+    font-size: 0.9rem;
+  }
+}
 
 /* Home - Images Stacked */
 .image-stack {
