@@ -755,8 +755,10 @@ h1, h2, h3, h4, h5,
 /* Navbar */
 .site-logo {
   position: relative;
-  font-weight: 900;
-  font-size: 1.3rem; }
+  font-weight: 600;
+  font-size: 1.0rem; 
+  /*font-family:'Roboto Slab';*/
+}
   .site-logo a {
     color: #9D2721; }
 
@@ -1134,7 +1136,7 @@ h1, h2, h3, h4, h5,
     color: #9D2721; }
   .intro-section p {
     color: #000;
-    font-size: 1.1rem;}
+    /*font-size: 1.1rem;*/}
 
 .img-absolute {
   pointer-events:none;
