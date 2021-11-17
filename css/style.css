@@ -62,8 +62,7 @@ a:hover {
 }
 
 .floating-menu{
-  padding: 5px;;
-  width: 130px;
+  padding: 10px;
   z-index: 100;
   position: fixed;
   bottom: 10%;
@@ -74,6 +73,7 @@ a:hover {
   text-align: right;
   line-height: 2.0;
 }
+
 @media (max-width: 768px) {
   .floating-menu{
     display: none;
@@ -81,15 +81,34 @@ a:hover {
 }
 
 .floating-nav:hover{
-  font-weight:800;
+  font-weight:900;
+}
+nav .contain ul{
+  list-style-type: none;
 }
 
+nav .contain ul li{
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+nav .contain ul li.active {
+  font-weight: 900;
+  transition: 0.3s;
+  }
+  /*nav .contain ul li.active a {
+  color: #ffffff;
+  }*/
+
 .floating-top{
-  padding: 5px;
+  padding: 10px;
   z-index: 100;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 30px;
   font-size: 0.8rem;
 }
 .btn-top{
@@ -104,9 +123,11 @@ a:hover {
   text-align: center;
   vertical-align: middle;
   line-height: 1.5;
-  border-radius: 1.0rem;
   user-select: none;
+  border-radius: 5px;
   border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: saturate(180%) blur(10px);
 }
 .btn-top:hover{
   font-weight:800;

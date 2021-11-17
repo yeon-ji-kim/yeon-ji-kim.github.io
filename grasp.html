@@ -93,11 +93,15 @@
     -->
 
     <nav class="floating-menu">
-      <a href="#overview" class="floating-nav">Overview</a><br>
-      <a href="#user-study" class="floating-nav">User Study</a><br>
-      <a href="#tool" class="floating-nav">Tool</a><br>
-      <a href="#findings" class="floating-nav">Findings</a><br>
-      <a href="#reflections" class="floating-nav">Reflections</a>
+      <div class="contain">
+        <ul>
+          <li class="overview active"><a href="#overview" class="floating-nav">Overview</a></li>
+          <li class="user-study"><a href="#user-study" class="floating-nav">User Study</a></li>
+          <li class="tool"><a href="#tool" class="floating-nav">Tool</a></li>
+          <li class="findings"><a href="#findings" class="floating-nav">Findings</a></li>
+          <li class="reflections"><a href="#reflections" class="floating-nav">Reflections</a></li>
+        </ul>
+      </div>
     </nav>
 
     <div class="floating-top">
@@ -158,7 +162,8 @@
       </div>
     </div>
 
-    <div class="site-section bg-light" id="overview">
+  <section id="overview">
+    <div class="site-section bg-light">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12 mb-5">
@@ -280,8 +285,10 @@
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="site-section bg-light" id="user-study">
+  <section id="user-study">
+    <div class="site-section bg-light">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12">
@@ -344,8 +351,10 @@
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="site-section bg-light" id="tool">
+  <section id="tool">
+    <div class="site-section bg-light">
       <div class="container">
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 mb-5">
@@ -435,8 +444,10 @@
         </div>
       </div>
     </div>
+</section>
 
-    <div class="site-section" id="findings">
+<section id="findings">
+    <div class="site-section">
       <div class="container">
         <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 mr-auto">
@@ -545,18 +556,26 @@
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="site-section bg-light" id="reflections">
+  <section id="reflections">
+    <div class="site-section bg-light">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12">
             <h2 class="section-title">Reflections</h2>
+            <span class="section-sub-title d-block" style="font-size:1.0rem; color:#333333;">What can be improved</span>
+            <p class="mb-5">
+              To present novices an explanation of how a machine learning model perceive images, we initially planned on having a feature visualization. 
+              However, implementing a fully explainable deep learning model was difficult even for many researchers. 
+              Instead, we decided to visualize images with activation maps, which also helped users to understand the underlying process of machine learning.
+            </p>
             <span class="section-sub-title d-block" style="font-size:1.0rem; color:#333333;">Working on a Research Project for the First Time</span>
             <p class="mb-5">
-              Working on a research project, and even leading a team of two, requires being precise in designing methodology, writing a tool guide for participants, and managing all the data from the study.
-              I also realized that there are many kinds of variables that can happen during the experiment. Do not try to predict users! 
+              Working on a research project, and even leading a team of two, required being precise in designing methodology, writing a tool guide for participants, and managing all the data from the study.
+              I realized that there are many kinds of unexpected variables that can happen during the experiment. Do not try to predict users! 
               After many iterations of pilot studies, I could see how users utilize the system, which may have been different from our purpose. 
-              But that was the most exciting part of the user research!
+              But that was the most exciting part of the user research and I learned how to interact with and observe actual users.
             </p>
             <!--
             <span class="section-sub-title d-block" style="font-size:1.0rem; color:#333333;">What's Essential for MVP?</span>
@@ -570,6 +589,7 @@
         </div>
       </div>
     </div>
+  </section>
 
     <div class="site-section" id="">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -645,6 +665,8 @@
 
   
   <script src="js/main.js"></script>
+  <script src="js/floating.js"></script>
+
     
   </body>
 </html>

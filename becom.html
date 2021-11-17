@@ -91,19 +91,23 @@
       </defs>
     </svg>
     -->
-
     <nav class="floating-menu">
-      <a href="#overview" class="floating-nav">Overview</a><br>
-      <a href="#research" class="floating-nav">Research</a><br>
-      <a href="#design" class="floating-nav">Design</a><br>
-      <a href="#implementation" class="floating-nav">Implementation</a><br>
-      <a href="#reflections" class="floating-nav">Reflections</a>
+      <div class="contain">
+        <ul>
+          <li class="overview active"><a href="#overview" class="floating-nav">Overview</a></li>
+          <li class="research"><a href="#research" class="floating-nav">Research</a></li>
+          <li class="design"><a href="#design" class="floating-nav">Design</a></li>
+          <li class="implementation"><a href="#implementation" class="floating-nav">Implement</a></li>
+          <li class="reflections"><a href="#reflections" class="floating-nav">Reflections</a></li>
+        </ul>
+      </div>
     </nav>
 
     <div class="floating-top">
       <a href="#home-section" class="btn-top">top</a>
     </div>
-    
+
+
     <div class="intro-section" id="home-section">
       <div class="container">
         <div class="row align-items-center">
@@ -149,7 +153,8 @@
       </div>
     </div>
 
-    <div class="site-section bg-light" id="overview">
+    <section id="overview">
+    <div class="site-section bg-light">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12 mb-5">
@@ -240,8 +245,10 @@
         </div>
       </div>
     </div>
+</section>
 
-    <div class="site-section" id="research">
+<section id="research">
+    <div class="site-section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12">
@@ -364,8 +371,10 @@
         </div>
       </div>
     </div>
+</section>
 
-    <div class="site-section bg-light" id="design">
+<section id="design">
+    <div class="site-section bg-light" id="">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-6 mr-auto">
@@ -499,11 +508,12 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
+</section>
 
-    <div class="site-section" id="implementation">
+<section id="implementation">
+    <div class="site-section" id="">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12 mr-auto">
@@ -588,8 +598,10 @@
         </div>
       </div>
     </div>
+</section>
 
-    <div class="site-section bg-light" id="reflections">
+<section id="reflections">
+    <div class="site-section bg-light" id="">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12">
@@ -672,7 +684,7 @@
         </div>
       </div>
     </div>
-    
+</section>
   
     <div class="site-section" id="">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -791,6 +803,7 @@
 
   
   <script src="js/main.js"></script>
+  <script src="js/floating.js"></script>
   
   <!--
   <script>
