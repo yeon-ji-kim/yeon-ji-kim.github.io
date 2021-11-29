@@ -40,15 +40,21 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!--<link href="./pointer.css" rel="stylesheet">-->
-    
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
+
     <link rel="icon" href="images/yj.png">
   </head>
+  
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    
+    
+<!--
+    <div id="preloader">
+      <div class="loading">
+        <div class="bounceball"></div>
+        <div class="text">Best on Desktop</div>
+    </div>
+    </div>
+-->
 
   <div class="site-wrap">
 
@@ -63,7 +69,6 @@
    
     
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-      
       <div class="container-fluid">
         <div class="d-flex align-items-center">
           <div class="site-logo"><a href="index.html">Yeonji Kim</a></div>
@@ -139,7 +144,7 @@
               <div class="row mb-5">
                 <h2 class="section-title">Be_com</h2>
                 <div><p>Online Social Networking Platform for Classes in Post-COVID-19</p>
-                <span class="section-sub-title d-block">Web Application Design & Implementation</span></div>
+                <span class="section-sub-title d-block">Web Design & Implementation</span></div>
                 <button class="btn" style="cursor:default;">Project</button>
               </div>
             </a>
@@ -573,6 +578,21 @@
   
   <script src="js/main.js"></script>
   <script src="js/filter.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>  
+  <!--<script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){
+      loader.style.display="none";
+    })
+  </script>-->
+
+  <script>  
+    $(window).on('load', function () {  
+        $("#preloader").fadeOut(5000);  
+   });  
+ </script>
   
   <!--Text 3D Effect-->
   <script src="js/text-wave.js"></script>
