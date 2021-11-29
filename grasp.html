@@ -39,11 +39,6 @@
 
     <!--<link href="./pointer.css" rel="stylesheet">-->
 
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
     <link rel="icon" href="images/yj.png">
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -96,8 +91,8 @@
       <div class="contain">
         <ul>
           <li class="overview active"><a href="#overview" class="floating-nav">Overview</a></li>
-          <li class="user-study"><a href="#user-study" class="floating-nav">User Study</a></li>
           <li class="tool"><a href="#tool" class="floating-nav">Tool</a></li>
+          <li class="user-study"><a href="#user-study" class="floating-nav">User Study</a></li>
           <li class="findings"><a href="#findings" class="floating-nav">Findings</a></li>
           <li class="reflections"><a href="#reflections" class="floating-nav">Reflections</a></li>
         </ul>
@@ -142,7 +137,7 @@
               <p><span class="bold">Team</span><br>Yeonji Kim, Kyeongyeon Lee</p>
             </div>
             <div class="">
-              <p><span class="bold">Tools</span><br>Adobe XD<br>Excel, Python</p>
+              <p><span class="bold">Tools</span><br>Adobe XD (UX/UI Design)<br>Excel, Python (Data Analysis)</p>
             </div>
           </div>
           <div class="col-lg-8">
@@ -153,8 +148,7 @@
             👥 <span style="font-weight:500;"> User Study</span> (60%) : Conducted user study with 21 participants<br>
             📊 <span style="font-weight:500;"> Data Analysis</span> (70%) : Qualitative - Affinity Walls; Quantitative - data analysis using Python<br>
             📄 <span style="font-weight:500;"> Thesis</span> (80%) : Introduction, Related Work, User Study, Findings, Conclusion</p>
-            
-            <div class="">
+            <div>
               <p><span class="bold">Award</span><br>3rd Place in Ewha Capstone Design Expo</p>
             </div>
           </div>
@@ -171,37 +165,14 @@
             <p>It is difficult for non-experts to build machine learning (ML) models at the level that satisfies their needs. 
                 Deep learning models are even more challenging because it is unclear how to improve the model, and a trial-and-error approach is not feasible since training these models is time-consuming. 
                 To assist these novice users, we examined how <span class="highlight">interactive and explainable feedback</span> while training a deep learning network can contribute to model performance and users’ satisfaction, focusing on the <span class="highlight">data preparation process</span>.<br><br>
-                We conducted a user study with 31 participants without expertise, where they were asked to improve the accuracy of a deep learning model, varying feedback conditions. 
-                While no significant performance gain was observed, we identified potential barriers during the process and found that interactive and explainable feedback <span class="highlight">provides complementary benefits for improving users’ understanding of ML</span>. 
-                We conclude with implications for designing an interface for building ML models for novice users.
+                We conducted a user study with 31 participants without expertise and while no significant performance gain was observed, we identified potential barriers during the process and found that interactive and explainable feedback <span class="highlight">provides complementary benefits for improving users’ understanding of ML</span>.
               </p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="site-section" id="#">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-12 mb-5">
-            <h2 class="section-title">Challenges</h2>
-            <p>
-            Studies have shown that it is not straightforward for nonexperts to build ML models without prior knowledge and that they cannot build ML models in an efficient way. 
-            The major problem was that non-experts rarely tried to understand the internal mechanism of learning algorithms, hence having trouble improving the performance or even giving up their tasks. 
-            Also, most of them did not consider the overfitting problem, ending up having poor accuracy on a new dataset.</p>
-            <p class="bold" style="font-size:1.1rem"><span class="highlight">"How can we better assist non-experts with building a deep learning model?"</span></p>
-                <!--
-            <br><br><span style="font-size:0.8rem; color:#7d7d7d;">T. Kulesza, M. Burnett, W.-K. Wong, and S. Stumpf, “Principles of explanatory debugging to personalize interactive machine learning,” in Proceedings of the 20th international conference on intelligent user interfaces. ACM, pp. 126–137, 2015. DOI: https://doi.org/10.1145/2678025.2701399<br>
-                T. Kulesza, S. Stumpf, M. Burnett, and I. Kwan, “Tell me more?: the effects of mental model soundness on personalizing an intelligent agent,” in Proceedings of the SIGCHI Conference on Human Factors in Computing Systems. ACM, pp. 1–10, 2012. DOI: https://doi.org/10.1145/2207676.2207678<br>
-                W. B. Knox and P. Stone, “Reinforcement learning from human reward: Discounting in episodic tasks,” in 2012 IEEE RO-MAN: The 21st IEEE International Symposium on Robot and Human Interactive Communication. IEEE, pp. 878–885, 2012. DOI: https://doi.org/10.1109/roman.2012.6343862<br>
-                Q. Yang, J. Suh, N.-C. Chen, and G. Ramos, “Grounding interactive machine learning tool design in how non-experts actually build models,” in Proceedings of the 2018 Designing Interactive Systems Conference. ACM, pp. 573–584, 2018. DOI: https://doi.org/10.1145/3196709.3196729</span>
-            </p>-->
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section bg-light" id="process">
+    <div class="site-section" id="process">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-5">
@@ -221,21 +192,87 @@
       </div>
     </div>
 
-    <div class="site-section" id="#">
+    <div class="site-section bg-light" id="#">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12 mb-5">
+            <h2 class="section-title">Research Question</h2>
+            <p>
+            Studies have shown that it is not straightforward for non-experts to build ML models without prior knowledge and that they cannot build ML models in an efficient way. <br><br>
+            The major problems were:<br> 
+            <ul>
+              <li>Non-experts rarely tried to understand the internal mechanism of learning algorithms.</li>
+              <li>Most of them did not consider the overfitting problem.</li>
+            </ul>
+            Hence they had trouble improving the performance or even giving up their tasks or ended up having poor accuracy on a new dataset.</p><br>
+            <p><span class="project-challenge">"How can we better assist non-experts with building a deep learning model?"</span></p>
+                <!--
+            <br><br><span style="font-size:0.8rem; color:#7d7d7d;">T. Kulesza, M. Burnett, W.-K. Wong, and S. Stumpf, “Principles of explanatory debugging to personalize interactive machine learning,” in Proceedings of the 20th international conference on intelligent user interfaces. ACM, pp. 126–137, 2015. DOI: https://doi.org/10.1145/2678025.2701399<br>
+                T. Kulesza, S. Stumpf, M. Burnett, and I. Kwan, “Tell me more?: the effects of mental model soundness on personalizing an intelligent agent,” in Proceedings of the SIGCHI Conference on Human Factors in Computing Systems. ACM, pp. 1–10, 2012. DOI: https://doi.org/10.1145/2207676.2207678<br>
+                W. B. Knox and P. Stone, “Reinforcement learning from human reward: Discounting in episodic tasks,” in 2012 IEEE RO-MAN: The 21st IEEE International Symposium on Robot and Human Interactive Communication. IEEE, pp. 878–885, 2012. DOI: https://doi.org/10.1109/roman.2012.6343862<br>
+                Q. Yang, J. Suh, N.-C. Chen, and G. Ramos, “Grounding interactive machine learning tool design in how non-experts actually build models,” in Proceedings of the 2018 Designing Interactive Systems Conference. ACM, pp. 573–584, 2018. DOI: https://doi.org/10.1145/3196709.3196729</span>
+            </p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tool">
+    <div class="site-section" id="#">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-12">
             <h2 class="section-title">Our Approach</h2>
             <p class="mb-3">
-              To better assist novice users with building a deep learning model, we decided to use the concept of <span class="bold">Interactive Machine Learning</span> and <span class="bold">Explainable Machine Learning</span> from previous research.<br><br><br>
-
-              <span class="bold">Our definition for each concept:</span><br><br>
+              To better assist novice users with building a deep learning model, we decided to use the concept of <span class="bold">Interactive Machine Learning</span> and <span class="bold">Explainable Machine Learning</span> from previous research.<br><br>
+              <span class="bold highlight">Our definition for each concept:</span><br>
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <p>
               🏷️ <span class="bold">Interactivity</span> <br>
               <span style="color:#7d7d7d;">Allowing users to quickly examine the impact of their actions and adapt subsequent inputs to obtain desired behavior when training ML models.</span><br></p>
+            <p>
+          </div>
+          <div class="col-lg-6">
             <p>
               🏷️ <span class="bold">Explainability</span><br>
               <span style="color:#7d7d7d;">Uncovering the process of training or outcomes of an ML system with explanations presented in forms that are easy to understand for humans.</span>
             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section" id="#">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row mb-3">
+          <div class="col-lg-12">
+            <h2 class="section-title">Tool</h2>
+            <p class="mb-3">
+              To observe how non-experts create ML systems and test the effectiveness of our approach, we decided to create an environment for building an ML model.
+            </p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <p class="mb-3">
+              <span class="bold">Key Challenge:</span> (1) Help novices build machine learning models easily and (2) include interactive and explainable features.<br>
+              <span class="bold">Approach:</span> Let users focus on easier processes: <span class="highlight">"preparing dataset"</span> and <span class="highlight">"evaluating models"</span>.
+            </p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-5">
+            <p>
+              <span class="bold">User Flow of the tool:</span><br>
+              <span class="bold">1. </span>Users would prepare dataset with assistance from interactive and explainable features.<br>
+              <span class="bold">2. </span>Then, they would train the ML model with the dataset, evaluate their trained model, and modify their dataset <span class="highlight">iteratively</span> until they get desired outcomes.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <img src="images/grasp/user_flow.png" alt="Image" class="img-fluid">
           </div>
         </div>
         <div class="row">
@@ -291,9 +328,24 @@
     <div class="site-section bg-light">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 mb-3">
             <h2 class="section-title" id="title-blue">User Study</h2>
-            <p>To investigate the effectiveness of interactivity and explainability and to identify potential barriers that non-experts would experience while building their ML systems, we conducted a study with 31 participants who had <span class="bold">little or no ML-related experience</span> where they were asked to use our <span class="bold">custom user interface designed for this study to train an image-based ML model.</span>
+            <p>To investigate the effectiveness of interactivity and explainability and to identify potential barriers that non-experts would experience while building their ML systems, we conducted a study with our custom user interface designed for this study.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <p><span class="bold">Participants</span><br>
+              31 participants who had <span class="highlight">little or no ML-related experience</span>.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <p><span class="bold">Data Condition</span><br>
+              <span class="highlight">Image dataset</span> with <span class="highlight">3 classes</span> related to dogs (Bulldog, Yorkshire, Labrador).
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <p><span class="bold">Task</span><br>
+              Build a machine learning model with higher accuracy than that of the initial model as high as possible.
             </p>
           </div>
         </div>
@@ -310,7 +362,8 @@
         <div class="row">
           <div class="col-lg-6">
             <p>
-              The user study was conducted under the following <span class="highlight">four conditions</span> to examine if different feedback of a model-building tool have <span class="bold">different effects on the model accuracy as well as users’ understanding of ML.</span>
+              The user study was conducted under the following <span class="highlight">four conditions</span> to examine if different feedback of a model-building tool have <span class="bold">different effects on the model accuracy as well as users’ understanding of ML.</span><br>
+              Participants were assigned to one of the four conditions for the data preparation task.
             </p>
           </div>
           <div class="col-lg-6">
@@ -321,7 +374,7 @@
         </div>
       </div>
     </div>
-
+<!--
     <div class="site-section bg-light" id="#">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
@@ -351,27 +404,22 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <section id="tool">
+  -->
     <div class="site-section bg-light">
-      <div class="container">
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 mb-5">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-12">
             <h2 class="section-title">Apparatus</h2>
-            <p>
-              To observe how non-experts create ML systems, we <span class="bold">implemented a web-based system, Grasp,</span> that allows users to <span class="highlight">iteratively import, review, refine the training dataset, and evaluate</span> their trained models to build a deep learning network for image classification.
-            </p>
           </div>
         </div>
-        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-4">
-            <span class="section-sub-title d-block" style="font-size:1.0rem;">Initial Tool Design</span>
+        <div class="row">
+          <div class="col-lg-7">
+            <img src="images/grasp/prototype.gif" alt="Image" class="img-fluid img-bg">
           </div>
-          <div class="col-lg-8">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/grasp_initial_design.png" alt="Image" class="img-fluid">
-            </div>
+          <div class="col-lg-5">
+            <p>
+              We implemented<span class="bold"> a web-based system, Grasp,</span> that allows users to <span class="highlight">iteratively import, review, refine the training dataset, and evaluate</span> their trained models to build a deep learning network for classification.
+            </p>
           </div>
         </div>
       </div>
@@ -385,37 +433,19 @@
           </div>
         </div>
         <div class="row mb-5">
+          <div class="col-lg-3"></div>
           <div class="col-lg-6">
-            <p>
-              The study was conducted as a one-hour single-session study consisting of a <span class="bold">pretest</span>, a <span class="bold">data preparation task</span> for building a deep learning model, and a <span class="bold">post-test</span> followed by an interview. As a between-subject test, participants were assigned to one of the four conditions for the data preparation task.
-            </p>
-          </div>
-          <div class="col-lg-1"></div>
-          <div class="col-lg-5">
             <div class="image-absolute-box" >
               <img src="images/grasp/grasp_procedure.png" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
-            <span class="section-sub-title d-block" style="font-size:1.0rem;">Pretest</span>
-            <p class="mb-5">Before performing the data preparation task for building a model, we presented <span class="bold">two ML application scenarios</span> (i.e., image classification, speech recognition), and asked participants to <span class="highlight">explain what kind of dataset would be needed to make such ML systems with high accuracy for each.</span></p>
-            <span class="section-sub-title d-block" style="font-size:1.0rem;">Data Preparation Task</span>
-            <p class="mb-5">
-              For the main task, we first played video tutorials that explain the basic concepts of ML as well as the instructions on how to use our custom interface for performing the task. 
-              They were given 3 minutes to explore the interface themselves, such as importing and deleting images and training a model. <br>
-              After this brief introduction, participants were instructed to <span class="highlight">add or remove images per class</span> using the web interface <span class="highlight">to improve the accuracy of the initial model as high as possible</span> within 30 minutes. 
-              They were allowed to train and check the current model’s accuracy up to <span class="bold">three times</span>, which can be done by clicking the "Training" button on the top right of the interface. 
-              Once the training is completed, participants were able to check the results such as <span class="highlight">training accuracy and validation accuracy</span> on a new page. To understand participants’ mental model, we used a <span class="bold">think-aloud protocol</span> throughout the task and <span class="bold">collected participants’ feedback before and after checking the training results</span> by asking <span class="bold">how they prepared their data and what they think about the results</span>.
-            </p>
-            <span class="section-sub-title d-block" style="font-size:1.0rem;">Posttest & Interview</span>
-            <p>
-              After the task completion, we had a posttest session where we asked participants the <span class="bold">same questions</span> again with the two scenarios from our pretest to examine if <span class="highlight">participants’ understanding of ML systems has improved after performing our task</span>. 
-              Then we had a wrap-up interview to <span class="highlight">understand the potential barriers</span> for preparing a dataset for an ML model and how the presented interactive or explainable feedback can be used to ease the training process. 
-              We also asked participants about their satisfaction, usefulness, the difficulty of each feature they used as well as perceived task load (NASA-TLX) on a 7-point scale.
-            </p>
-        
+          <div class="col-lg-1"></div>
+          <div class="col-lg-10">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/procedure-detail.png" alt="Image" class="img-fluid">
+            </div>
           </div>
         </div>
       </div>
@@ -427,10 +457,13 @@
           <div class="col-lg-12">
             <div class="mb-5">
               <h2 class="section-title">Data & Analysis</h2>
+              <p>
+                With the non-parametric data collected from participants, I analyzed them <span class="highlight">qualitatively and quantitatively</span> using Python and Excel/Google Spreadsheet.
+              </p>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row mb-5">
           <div class="col-lg-6">
             <div class="image-absolute-box" >
               <img src="images/grasp/data.png" alt="Image" class="img-fluid">
@@ -440,6 +473,45 @@
             <div class="image-absolute-box" >
               <img src="images/grasp/analysis.png" alt="Image" class="img-fluid">
             </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg-12">
+            <p>
+              For subjective responses, I set several meaningful behavior and <span class="bold">categorized each participant into themes</span> if they showed such behavior.
+            </p>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-7">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/data-test.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/data-review.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-6">
+            <p>With the ML application scenarios, I made a rubric and graded them without knowing their test group.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/data2.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/data1.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <p>For the responses in numbers such as satisfaction or difficulty, I analyzed them through tests including Mann-Whitney U-tests and Kruskal Wallis tests.</p>
           </div>
         </div>
       </div>
@@ -568,7 +640,8 @@
             <p class="mb-5">
               To present novices an explanation of how a machine learning model perceive images, we initially planned on having a feature visualization. 
               However, implementing a fully explainable deep learning model was difficult even for many researchers. 
-              Instead, we decided to visualize images with activation maps, which also helped users to understand the underlying process of machine learning.
+              Instead, we decided to visualize images with activation maps, which also helped users to understand the underlying process of machine learning. 
+              Improving features in the application to provide explanations of the decisions the model made would help novices understand the system better.
             </p>
             <span class="section-sub-title d-block" style="font-size:1.0rem; color:#333333;">Working on a Research Project for the First Time</span>
             <p class="mb-5">
