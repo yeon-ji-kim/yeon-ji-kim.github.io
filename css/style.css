@@ -3,6 +3,10 @@
 }
 
 /* Base */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   line-height: 1.7;
   color: #000000;
@@ -38,6 +42,67 @@ a:hover {
 }
 
 /*추가*/
+
+/* Preloading page */
+#preloader{
+  background: #ffffff;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+@import  url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  color: var(--primary);
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.bounceball {
+  position: relative;
+  display: inline-block;
+  height: 37px;
+  width: 15px;}
+  .bounceball:before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    transform-origin: 50%;
+    animation: bounce 500ms alternate infinite ease;
+  }
+
+
+@keyframes bounce {
+  0% {
+    top: 30px;
+    height: 5px;
+    border-radius: 60px 60px 20px 20px;
+    transform: scaleX(2);
+  }
+  35% {
+    height: 15px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+  }
+}
+/* End of Preloading page */
+
 .bold{
   font-weight: 600;
 }
@@ -141,6 +206,13 @@ nav .contain ul li.active {
   .floating-top{
     display: none;
   }
+}
+
+.project-challenge{
+  font-size: 2.0rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: Roboto Slab;
 }
 
 .highlight{
@@ -495,6 +567,9 @@ nav .contain ul li.active {
 .resumecontent{
   font-size:0.9rem;
 }
+#honor .honordate{
+  text-align:right;
+}
 
 /*여기까지*/
 
@@ -503,6 +578,10 @@ nav .contain ul li.active {
   padding: 15px;
   border: 2px solid;
   box-shadow: 10px 10px #777;
+}
+
+.img-bg{
+  box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
 }
 
 /* Default */
@@ -557,7 +636,8 @@ h1, h2, h3, h4, h5,
   .btn:hover, .btn:active, .btn:focus {
     outline: none;
     -webkit-box-shadow: none !important;
-    box-shadow: none !important; }
+    box-shadow: none !important; 
+    font-weight: 900;}
   .btn.btn-black {
     border-width: 2px;
     border-color: #000;
