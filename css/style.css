@@ -9,16 +9,16 @@ html {
 
 body {
   line-height: 1.7;
-  color: #000000;
+  color: #333333;
   font-weight: 300;
   font-size: 1.0rem; }
 
 ::-moz-selection {
-  background: #000;
+  background: #333333;
   color: #fff; }
 
 ::selection {
-  background: #000;
+  background: #333333;
   color: #fff; }
 
 a {
@@ -42,7 +42,9 @@ a:hover {
 }
 
 /*추가*/
-
+a:hover .index-card-p {
+  font-weight:300;
+}
 /* Preloading page */
 #preloader{
   background: #ffffff;
@@ -109,11 +111,11 @@ a:hover {
 
 .underline {
   line-height: 1.2;
-  background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
+  background-image: linear-gradient(transparent calc(100% - 3px), #333333 3px);
   background-repeat: no-repeat;
   background-size: 0% 100%;
   transition: background-size 0.8s;
-  color: #000;
+  color: #333333;
 }
 
 @media (min-width: 1000px) {
@@ -606,10 +608,10 @@ h1, h2, h3, h4, h5,
   border-width: 2px; }
 
 .text-black {
-  color: #000 !important; }
+  color: #333333 !important; }
 
 .bg-black {
-  background: #000 !important; }
+  background: #333333 !important; }
 
 .color-black-opacity-5 {
   color: rgba(0, 0, 0, 0.5); }
@@ -653,24 +655,24 @@ h1, h2, h3, h4, h5,
     font-weight: 900;}
   .btn.btn-black {
     border-width: 2px;
-    border-color: #000;
-    background: #000;
+    border-color: #333333;
+    background: #333333;
     color: #fff; }
     .btn.btn-black:hover {
-      color: #000;
+      color: #333333;
       background-color: transparent; }
     .btn.btn-black.btn-outline-black {
-      color: #000;
+      color: #333333;
       background-color: transparent; }
       .btn.btn-black.btn-outline-black:hover {
-        border-color: #000;
-        background: #000;
+        border-color: #333333;
+        background: #333333;
         color: #fff; }
   .btn.btn-white {
     border-width: 2px;
     border-color: #fff;
     background: #fff;
-    color: #000; }
+    color: #333333; }
     .btn.btn-white:hover {
       color: #fff;
       background-color: transparent; }
@@ -680,13 +682,13 @@ h1, h2, h3, h4, h5,
       .btn.btn-white.btn-outline-white:hover {
         border-color: #fff;
         background: #fff;
-        color: #000; }
+        color: #333333; }
 
 .line-height-1 {
   line-height: 1 !important; }
 
 .bg-black {
-  background: #000; }
+  background: #333333; }
 
 .form-control {
   height: 43px;
@@ -728,7 +730,7 @@ h1, h2, h3, h4, h5,
   .site-footer p {
     color: #737373; }
   .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
-    color: #000; }
+    color: #333333; }
   .site-footer a {
     color: #999999; }
     .site-footer a:hover {
@@ -737,13 +739,13 @@ h1, h2, h3, h4, h5,
     margin-bottom: 10px; }
   .site-footer .footer-heading {
     font-size: 16px;
-    color: #000;
+    color: #333333;
     text-transform: uppercase;
     font-weight: 900; }
 
 .bg-text-line {
   display: inline;
-  background: #000;
+  background: #333333;
   -webkit-box-shadow: 20px 0 0 #000, -20px 0 0 #000;
   box-shadow: 20px 0 0 #000, -20px 0 0 #000; }
 
@@ -904,11 +906,11 @@ h1, h2, h3, h4, h5,
       display: inline-block; }
       .site-navbar .site-navigation .site-menu > li > a {
         padding: 5px 20px;
-        color: black;
+        color: #333333;
         display: inline-block;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
-          color: black; }
+          color: #333333; }
     .site-navbar .site-navigation .site-menu .has-children {
       position: relative; }
       .site-navbar .site-navigation .site-menu .has-children > a {
@@ -1000,7 +1002,7 @@ h1, h2, h3, h4, h5,
           visibility: visible;
           opacity: 1; }
     .site-navbar .site-navigation .site-menu.site-menu-dark > li > a {
-      color: #000; }
+      color: #333333; }
 
 .site-mobile-menu {
   width: 300px;
@@ -1171,7 +1173,7 @@ h1, h2, h3, h4, h5,
     .sticky-wrapper .site-navbar .site-menu > li {
       display: inline-block; }
       .sticky-wrapper .site-navbar .site-menu > li > a.active {
-        color: black;
+        color: #333333;
         position: relative; 
         font-weight:900;}
         .sticky-wrapper .site-navbar .site-menu > li > a.active:after {
@@ -1187,12 +1189,12 @@ h1, h2, h3, h4, h5,
     box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
     background: #fff; }
     .sticky-wrapper.is-sticky .site-navbar .site-logo a {
-      color: #000; }
+      color: #333333; }
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li {
       display: inline-block; }
       .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
         padding: 5px 20px;
-        color: #000;
+        color: #333333;
         display: inline-block;
         text-decoration: none !important; }
         .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover {
@@ -1227,9 +1229,9 @@ h1, h2, h3, h4, h5,
   .home-section h1 {
     font-size: 3rem;
     font-weight: 900;
-    color: #000; }
+    color: #333333; }
   .home-section p {
-    color: #000;
+    color: #333333;
     font-size: 1.1rem;}
 
 .intro-section {
@@ -1254,7 +1256,7 @@ h1, h2, h3, h4, h5,
     font-weight: 900;
     color: var(--primary); }
   .intro-section p {
-    color: #000;
+    color: #333333;
     /*font-size: 1.1rem;*/}
 
 .img-absolute {
@@ -1309,7 +1311,7 @@ h1, h2, h3, h4, h5,
 .section-title {
   font-family: 'Roboto Slab';
   font-size: 2rem;
-  color: #000;
+  color: #333333;
   margin-top: 1.8rem;
   margin-bottom: 1.8rem;
   font-weight: 900;
@@ -1342,7 +1344,7 @@ h1, h2, h3, h4, h5,
   font-size: 3.5rem;
   display: block;
   font-weight: 700;
-  color: #000;
+  color: #333333;
   margin-bottom: 1rem; }
 
 .counter .counter-text span {
@@ -1482,7 +1484,7 @@ h1, h2, h3, h4, h5,
     font-size: .9rem;
     letter-spacing: .1rem;
     text-transform: uppercase;
-    color: #000;
+    color: #333333;
     margin-bottom: 1.5rem;
     font-weight: 900; }
   .footer-section .footer-links li {
@@ -1501,7 +1503,7 @@ h1, h2, h3, h4, h5,
     font-weight: 900; }
   .process h3, .service h3 {
     font-size: 1.5rem;
-    color: #000;
+    color: #333333;
     font-weight: 700;
     margin-bottom: 1.5rem; }
 
