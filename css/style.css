@@ -42,7 +42,10 @@ a:hover {
 }
 
 /*추가*/
-a:hover .index-card-p {
+.index-card-p{
+  color: #333333;
+}
+.index-card-p:hover {
   font-weight:300;
 }
 /* Preloading page */
