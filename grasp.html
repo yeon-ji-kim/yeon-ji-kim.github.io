@@ -94,6 +94,7 @@
           <li class="tool"><a href="#tool" class="floating-nav">Tool</a></li>
           <li class="user-study"><a href="#user-study" class="floating-nav">User Study</a></li>
           <li class="findings"><a href="#findings" class="floating-nav">Findings</a></li>
+          <li class="redesign"><a href="#redesign" class="floating-nav">Redesign</a></li>
           <li class="reflections"><a href="#reflections" class="floating-nav">Reflections</a></li>
         </ul>
       </div>
@@ -146,7 +147,7 @@
             🖍️ <span style="font-weight:500;"> UX/UI Design</span> : User flows and UI design of the tool<br>
             📋 <span style="font-weight:500;"> User Study Methodology</span> : Interview scripts, guidelines, tutorials, and metrics <br>
             👥 <span style="font-weight:500;"> User Study</span> : Conducted user study with 21 participants<br>
-            📊 <span style="font-weight:500;"> Data Analysis</span> : Qualitative - Affinity Walls; Quantitative - data analysis using Python<br>
+            📊 <span style="font-weight:500;"> Data Analysis</span> : Qualitative & quantitative data analysis<br>
             📄 <span style="font-weight:500;"> Thesis</span> : Introduction, Related Work, User Study, Findings, Conclusion</p>
             <div>
               <p><span class="bold">Award</span><br>3rd Place in Ewha Capstone Design Expo</p>
@@ -165,8 +166,9 @@
             <p>It is difficult for non-experts to build machine learning (ML) models at the level that satisfies their needs. 
                 Deep learning models are even more challenging because it is unclear how to improve the model, and a trial-and-error approach is not feasible since training these models is time-consuming. 
                 To assist these novice users, we examined how <span class="highlight">interactive and explainable feedback</span> while training a deep learning network can contribute to model performance and users’ satisfaction, focusing on the <span class="highlight">data preparation process</span>.<br><br>
-                We conducted a user study with 31 participants without expertise and while no significant performance gain was observed, we identified potential barriers during the process and found that interactive and explainable feedback <span class="highlight">provides complementary benefits for improving users’ understanding of ML</span>.
+                Based on the findings from user test, I redesigned the tool that would help non-experts build machine learning models.
               </p>
+              <a href="#final-design" class="highlight2 bold" style="color:black;">See the final design ↓</a>
           </div>
         </div>
       </div>
@@ -206,6 +208,7 @@
             </ul>
             Hence they had trouble improving the performance or even giving up their tasks or ended up having poor accuracy on a new dataset.</p><br>
             <p><span class="project-challenge">"How can we better assist non-experts with building a deep learning model?"</span></p>
+            <a href="#final-design" class="highlight2 bold" style="color:black;">See the final design ↓</a>
                 <!--
             <br><br><span style="font-size:0.8rem; color:#7d7d7d;">T. Kulesza, M. Burnett, W.-K. Wong, and S. Stumpf, “Principles of explanatory debugging to personalize interactive machine learning,” in Proceedings of the 20th international conference on intelligent user interfaces. ACM, pp. 126–137, 2015. DOI: https://doi.org/10.1145/2678025.2701399<br>
                 T. Kulesza, S. Stumpf, M. Burnett, and I. Kwan, “Tell me more?: the effects of mental model soundness on personalizing an intelligent agent,” in Proceedings of the SIGCHI Conference on Human Factors in Computing Systems. ACM, pp. 1–10, 2012. DOI: https://doi.org/10.1145/2207676.2207678<br>
@@ -279,6 +282,7 @@
             <p>
               <span class="bold">Tool Design</span><br>
             </p>
+            <a href="#final-design" class="highlight2 bold" style="color:black;">See the final design ↓</a>
           </div>
           <div class="col-lg-5">
             <img src="images/grasp/F_Data Preparation.png" alt="Image" class="img-fluid img-bg">
@@ -654,22 +658,149 @@
       </div>
     </div>
   </section>
-<!--
+
   <section id="redesign">
     <div class="site-section bg-light">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row mb-5">
+      <div class="container">
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12">
             <h2 class="section-title">Redesigning the Tool</h2>
-            <p>Based on the findings, I redesigned the tool to become more useful to actual users.</p>
+            <p>Based on the findings, I redesigned the tool to be more accessible and usable to non-experts.<br>
+              Also, I designed the tool to provide the <span class="highlight">whole experience of making a model, testing it, and exporting it</span> to web or mobile environment.
+            </p>
+          </div>
+        </div>
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12">
+            <p class="bold">Key Approaches</p>
+          </div>
+          <div class="col-lg-3 textbox-outside">
+            <p class="textbox">1. Present all feedback features</p>
+          </div>
+          <div class="col-lg-3 textbox-outside">
+            <p class="textbox">2. Include different data types including speech.</p>
+          </div>
+          <div class="col-lg-3 textbox-outside">
+            <p class="textbox">3. Guide non-experts to prepare various and plenty of data.</p>
+          </div>
+          <div class="col-lg-3 textbox-outside">
+            <p class="textbox">4. Reinforce <i>Explainability</i> to prevent forming misconceptions.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>-->
+    <!--
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12">
+            <h2 class="section-title">User Flow</h2>
+            <p>Based on the findings, I redesigned the tool to be more accessible and usable to non-experts.<br>
+              Also, I designed the tool to provide the <span class="highlight">whole experience of making a model, testing it, and exporting it</span> to web or mobile environment.
+            </p>
+          </div>
+        </div>
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12">
+            
+          </div>
+        </div>
+      </div>
+    </div>-->
+    <div class="site-section bg-light" id="final-design">
+      <div class="container">
+        <div class="row mb-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12">
+            <h2 class="section-title">Final Design</h2>
+            <p><span class="bold">Web</span>: Building, Testing, Exporting, and Importing an Model</p>
+          </div>
+        </div>
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/Web-Home.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/Web-Setting.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/Web-Data Preparation.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/Web-Model Evaluation.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/Web-Export Setting.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/Web-Test.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12">
+            <p><span class="bold">Mobile</span>: Testing and Importing an Model</p>
+          </div>
+        </div>
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/Mob.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/Mob-Home.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/Mob-Home-1.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/Mob-Home-2.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/Mob-Camera.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/Mob-Picture.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/Mob-Result.png" alt="Image" class="img-fluid img-bg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="reflections">
-    <div class="site-section bg-light">
+    <div class="site-section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12">
