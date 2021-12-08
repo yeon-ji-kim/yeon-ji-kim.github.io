@@ -48,6 +48,9 @@ a:hover {
 .index-card-p:hover {
   font-weight:300;
 }
+.serif{
+  font-family: 'Playfair Display';
+}
 /* Preloading page */
 #preloader{
   background: #ffffff;
@@ -217,7 +220,7 @@ nav .contain ul li.active {
   font-size: 2.0rem;
   font-weight: 700;
   color: var(--primary);
-  font-family: Roboto Slab;
+  font-family: 'Playfair Display';
 }
 
 .highlight{
@@ -1317,7 +1320,7 @@ h1, h2, h3, h4, h5,
 }
 
 .section-title {
-  font-family: 'Roboto Slab';
+  font-family: 'Playfair Display';
   font-size: 2rem;
   color: #333333;
   margin-top: 1.8rem;
