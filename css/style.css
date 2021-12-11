@@ -314,6 +314,14 @@ nav .contain ul li.active {
 	transition: background-position .5s, background-size .3s ease-in .5s;
 }
 
+.highlight2-link{
+  color: #333333;
+}
+
+.footer-link{
+  font-size: 1.5rem;
+}
+
 .code-font{
   font-family: 'Courier', monospace;
   font-weight: 500;
