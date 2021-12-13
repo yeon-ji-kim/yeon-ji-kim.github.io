@@ -293,7 +293,8 @@ nav .contain ul li.active {
   }
 }
 .textp{
-  font-size:1.8rem;
+  /*font-size:1.8rem;*/
+  font-size:1.5rem;
 }
 .texts{
   float:left;
