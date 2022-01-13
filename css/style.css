@@ -500,13 +500,13 @@ nav .contain ul li.active {
 
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
-  cursor:  url(/images/view.png), auto;;
+  /*cursor:  url(/images/view.png), auto;;*/
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
-  cursor:  url(/images/view.png), auto;;
+  /*cursor:  url(/images/view.png), auto;;*/
   position: absolute;
   top: 40%;
   width: auto;
@@ -664,7 +664,7 @@ h1, h2, h3, h4, h5,
     visibility: visible; }
 
 .btn {
-  cursor: url(/images/view.png), auto;
+  /*cursor: url(/images/view.png), auto;*/
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 900; }
@@ -1013,7 +1013,7 @@ h1, h2, h3, h4, h5,
       .site-navbar .site-navigation .site-menu .has-children:hover > a, .site-navbar .site-navigation .site-menu .has-children:focus > a, .site-navbar .site-navigation .site-menu .has-children:active > a {
         color: var(--primary); }
       .site-navbar .site-navigation .site-menu .has-children:hover, .site-navbar .site-navigation .site-menu .has-children:focus, .site-navbar .site-navigation .site-menu .has-children:active {
-        cursor:  url(/images/view.png), auto;; }
+        /*cursor:  url(/images/view.png), auto;;*/ }
         .site-navbar .site-navigation .site-menu .has-children:hover > .dropdown, .site-navbar .site-navigation .site-menu .has-children:focus > .dropdown, .site-navbar .site-navigation .site-menu .has-children:active > .dropdown {
           -webkit-transition-delay: 0s;
           -o-transition-delay: 0s;
@@ -1058,7 +1058,7 @@ h1, h2, h3, h4, h5,
         padding-left: 10px;
         padding-right: 0px;
         line-height: 1;
-        cursor:  url(/images/view.png), auto;;
+        /*cursor:  url(/images/view.png), auto;;*/
         -webkit-transition: .3s all ease;
         -o-transition: .3s all ease;
         transition: .3s all ease; }
@@ -1122,7 +1122,7 @@ h1, h2, h3, h4, h5,
       width: 36px;
       height: 36px;
       text-align: center;
-      cursor:  url(/images/view.png), auto;;
+      /*cursor:  url(/images/view.png), auto;;*/
       border-radius: 50%; }
       .site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
         background: #f8f9fa; }
@@ -1406,7 +1406,7 @@ h1, h2, h3, h4, h5,
 .work-thumb {
   position: relative;
   display: block;
-  cursor:  url(/images/view.png), auto;; }
+  /*cursor:  url(/images/view.png), auto;;*/ }
   .work-thumb:after {
     position: absolute;
     top: 0;
