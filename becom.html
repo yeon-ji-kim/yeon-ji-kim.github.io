@@ -38,9 +38,14 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link href="./pointer.css" rel="stylesheet">
+
     <!--<link href="./pointer.css" rel="stylesheet">-->
 
     <link rel="icon" href="images/yj.png">
+
+    <script src="https://kit.fontawesome.com/35e4aaebfd.js" crossorigin="anonymous"></script>
+    <link href="lightbox2/dist/css/lightbox.css" rel="stylesheet" />
     
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -804,6 +809,27 @@
   
   <script src="js/main.js"></script>
   <script src="js/floating.js"></script>
+  <script src="lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+  <script src="pointer.js"></script>
+
+  <script>
+    init_pointer();
+    init_pointer({
+      pointerColor: "#0026ff"
+    })
+    init_pointer({
+      pointerColor: "#0026ff",
+      ringSize: 20,
+      ringClickSize: 10
+    })
+  </script>
+  
+  <!--https://lokeshdhakar.com/projects/lightbox2/-->
+  <script>
+    lightbox.option({
+      'disableScrolling': true
+    })
+  </script>
   
   <!--
   <script>

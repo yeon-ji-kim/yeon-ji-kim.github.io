@@ -37,6 +37,8 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link href="./pointer.css" rel="stylesheet">
+
     <!--<link href="./pointer.css" rel="stylesheet">-->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -147,6 +149,20 @@
 
   
   <script src="js/main.js"></script>
-    
+  
+  <script src="pointer.js"></script>
+
+  <script>
+    init_pointer();
+    init_pointer({
+      pointerColor: "#0026ff"
+    })
+    init_pointer({
+      pointerColor: "#0026ff",
+      ringSize: 20,
+      ringClickSize: 10
+    })
+  </script>
+
   </body>
 </html>

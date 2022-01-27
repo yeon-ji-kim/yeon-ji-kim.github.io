@@ -40,7 +40,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!--<link href="./pointer.css" rel="stylesheet">-->
+    <link href="./pointer.css" rel="stylesheet">
 
     <link rel="icon" href="images/yj.png">
   </head>
@@ -620,6 +620,20 @@
   
   <script src="js/main.js"></script>
   <script src="js/filter.js"></script>
+  <script src="pointer.js"></script>
+
+  <script>
+    init_pointer();
+    init_pointer({
+      pointerColor: "#0026ff"
+    })
+    init_pointer({
+      pointerColor: "#0026ff",
+      ringSize: 20,
+      ringClickSize: 10
+    })
+  </script>
+
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>  
   <!--<script>
