@@ -40,7 +40,7 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!--<link href="./pointer.css" rel="stylesheet">-->
+    <link href="./pointer.css" rel="stylesheet">
 
     <link rel="icon" href="images/yj.png">
   </head>
@@ -955,6 +955,20 @@
   
   <script src="js/main.js"></script>
   <script src="js/floating.js"></script>
+  <script src="lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+  <script src="pointer.js"></script>
+
+  <script>
+    init_pointer();
+    init_pointer({
+      pointerColor: "#0026ff"
+    })
+    init_pointer({
+      pointerColor: "#0026ff",
+      ringSize: 20,
+      ringClickSize: 10
+    })
+  </script>
 
     
   </body>
