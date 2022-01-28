@@ -42,6 +42,13 @@ a:hover {
 }
 
 /*추가*/
+.cite{
+  font-size: 0.9rem;
+  font-style:italic;
+  color: #777;
+}
+
+
 .lightbox-img {
   overflow: hidden;
 }
