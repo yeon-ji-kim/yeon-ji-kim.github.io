@@ -169,12 +169,23 @@
         <div class="row">
           <div class="col-lg-12 mb-5">
             <h2 class="section-title">Overview</h2>
-            <p>It is difficult for non-experts to build machine learning (ML) models at the level that satisfies their needs. 
+            <p>It is <span class="highlight">difficult for non-experts to build machine learning (ML) models</span> at the level that satisfies their needs. 
                 Deep learning models are even more challenging because it is unclear how to improve the model, and a trial-and-error approach is not feasible since training these models is time-consuming. 
-                To assist these novice users, we examined how <span class="highlight">interactive and explainable feedback</span> while training a deep learning network can contribute to model performance and users’ satisfaction, focusing on the <span class="highlight">data preparation process</span>.<br><br>
+                To assist these novice users, we <span class="highlight">examined how additional features can help</span> while training a deep learning network can contribute to model performance and users’ satisfaction, focusing on the data preparation process.<br><br>
                 Based on the findings from user test, I <span class="bold">redesigned the tool</span> that would help non-experts build machine learning models.
               </p>
-              <a href="#final-design" class="highlight2 bold highlight2-link">See the final redesign ↓</a>
+          </div>
+          <div class="col-lg-6">
+            <p class="bold">Tool Used in the Experiment</p>
+            <a class="lightbox-img" href="images/grasp/grasp_actual_design.png" data-lightbox="grasp-overview" data-title="Initial Tool Design">
+              <img src="images/grasp/grasp_actual_design.png" alt="Image" class="img-fluid img-bg">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <p class="bold">Redesign of the Tool Based on Research Findings</p>
+            <a class="lightbox-img" href="images/grasp/Web-Data Preparation.png" data-lightbox="grasp-overview" data-title="Initial Tool Design">
+              <img src="images/grasp/Web-Data Preparation.png" alt="Image" class="img-fluid img-bg">
+            </a>
           </div>
         </div>
       </div>
@@ -283,6 +294,7 @@
             <img src="images/grasp/user_flow.png" alt="Image" class="img-fluid">
           </div>
         </div>
+        <!--
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-2">
             <p>
@@ -298,7 +310,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
     <div class="site-section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
@@ -391,32 +403,36 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 mb-3">
             <p>
               The user study was conducted under the following <span class="highlight">four conditions</span> to examine if different feedback of a model-building tool have <span class="bold">different effects on the model accuracy as well as users’ understanding of ML.</span> 
               Participants were assigned to one of the four conditions for the data preparation task.
             </p>
           </div>
           <div class="row">
-            <div class="col-lg-3">
-              <div class="image-absolute-box" >
+            <div class="col-lg-3 text-center">
+              <div class="image-absolute-box mb-3" >
                 <img src="images/grasp/D_Data Preparation.png" alt="Image" class="img-fluid img-bg">
               </div>
+              <p>No feedback</p>
             </div>
-            <div class="col-lg-3">
-              <div class="image-absolute-box" >
+            <div class="col-lg-3 text-center">
+              <div class="image-absolute-box mb-3" >
                 <img src="images/grasp/IN_Data Preparation.png" alt="Image" class="img-fluid img-bg">
               </div>
+              <p>Interaction feedback</p>
             </div>
-            <div class="col-lg-3">
-              <div class="image-absolute-box" >
+            <div class="col-lg-3 text-center">
+              <div class="image-absolute-box mb-3" >
                 <img src="images/grasp/EP_Data Preparation.png" alt="Image" class="img-fluid img-bg">
               </div>
+              <p>Explainable feedback</p>
             </div>
-            <div class="col-lg-3">
-              <div class="image-absolute-box" >
+            <div class="col-lg-3 text-center">
+              <div class="image-absolute-box mb-3" >
                 <img src="images/grasp/F_Data Preparation.png" alt="Image" class="img-fluid img-bg">
               </div>
+              <p>Both feedback</p>
             </div>
           </div>
         </div>
@@ -562,7 +578,7 @@
             <div class="process p-3">
               <span class="number">01</span>
               <div>
-                <h2 class="section-title">The Understanding of Building a Better ML Model</h2>
+                <h2 class="section-title">Increased Understanding of Building a Better ML Model</h2>
               </div>
             </div>
           </div>
