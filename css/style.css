@@ -34,7 +34,7 @@ a:hover {
 }
 
 #cursor:hover {
-  cursor: url(/images/click.png), auto;
+  /*cursor: url(/images/click.png), auto;*/
 }
 
 .works {

@@ -15,6 +15,11 @@
     pointer-events: none;
     transition: border-color 0.5s;
 }
+@media (max-width: 768px) {
+    #pointer-dot{
+      display: none;
+    }
+  }
 
 #pointer-ring {
     left: 0;
@@ -28,6 +33,11 @@
     z-index: 102;
     pointer-events: none;
 }
+@media (max-width: 768px) {
+    #pointer-ring{
+      display: none;
+    }
+  }
 
 html {
     cursor: none !important;
