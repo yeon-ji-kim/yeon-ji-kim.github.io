@@ -29,7 +29,7 @@ a {
 a:hover {
     color:var(--primary);
     text-decoration:none; 
-    cursor: url(/images/click.png), auto;
+    /*cursor: url(/images/click.png), auto;*/
     font-weight: 700;
 }
 
