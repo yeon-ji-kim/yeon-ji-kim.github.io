@@ -1287,11 +1287,17 @@ h1, h2, h3, h4, h5,
 .home-section{
   position: relative; }
   .home-section, .home-section .container .row {
-    height: 80vh;
+    height: 90vh;
     min-height: 400px; }
+    @media (max-width: 991.98px) {
+      .home-section, .home-section .container .row {
+        height: 100vh;
+        min-height: 400px; } }
   .home-section .col-lg-12 {
     padding-top: 10%;
   }
+
+
     /*
   .home-section:before {
     content: "";
@@ -1310,7 +1316,10 @@ h1, h2, h3, h4, h5,
     color: #333333; }
   .home-section p {
     color: #333333;
-    font-size: 1.1rem;}
+    font-size: 1.0rem;}
+    @media (max-width: 991.98px) {
+      .home-section p {
+        font-size: 0.9rem; } }
 
 .intro-section {
   position: relative; }
