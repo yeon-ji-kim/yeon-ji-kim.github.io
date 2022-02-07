@@ -48,6 +48,14 @@ a:hover {
   font-weight: 700;
 }
 
+.mobile-only{
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .mobile-only {
+    display:block; }
+}
+
 .bg-blue{background-color: #333!important;}
 .lg-section-header-dark{
   font-family: 'Playfair Display';
