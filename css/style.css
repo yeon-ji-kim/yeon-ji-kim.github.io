@@ -345,7 +345,7 @@ nav .contain ul li.active {
 	background-image: -webkit-linear-gradient(92deg, #0026FF, #B6C1FF);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	-webkit-animation: hue 10s infinite linear;
+	-webkit-animation: hue 5s infinite linear;
 }
 @-webkit-keyframes hue {
   from {
@@ -480,7 +480,7 @@ nav .contain ul li.active {
 }
  
 .imgzoom:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* MORE - Project List */
