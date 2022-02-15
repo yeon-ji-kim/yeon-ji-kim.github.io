@@ -42,7 +42,9 @@ a:hover {
 }
 
 /*추가*/
-
+.round-corner{
+  border-radius:5px;
+}
 .finding-title{
   font-size: 1.5rem;
   font-weight: 700;
