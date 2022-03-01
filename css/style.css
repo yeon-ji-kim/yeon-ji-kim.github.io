@@ -1300,7 +1300,7 @@ h1, h2, h3, h4, h5,
 .home-section{
   position: relative; }
   .home-section, .home-section .container .row {
-    height: 90vh;
+    height: 100vh;
     min-height: 400px; }
     @media (max-width: 991.98px) {
       .home-section, .home-section .container .row {
