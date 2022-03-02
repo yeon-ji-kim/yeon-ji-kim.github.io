@@ -42,6 +42,40 @@ a:hover {
 }
 
 /*추가*/
+.intro-background{
+	font-weight: 900;
+	color: #333;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--primary);
+}
+
+i{
+  color: var(--primary);
+  margin-right: 10px;
+}
+.arrow1 {
+  animation: slide1 1s ease-in-out infinite;
+  margin-left: 9px;
+}
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(90deg);
+  }
+
+  50% {
+    transform: translate(0, 10px) rotate(90deg);
+  }
+}
+.home-bottom-arrow{
+  margin-top: 30px;
+}
+.item a:hover{
+  font-weight:900;
+}
+
+
 #home-works:hover h2{
   color:var(--primary);
 }
