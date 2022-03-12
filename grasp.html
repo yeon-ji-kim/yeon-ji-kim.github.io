@@ -152,7 +152,7 @@
             📂 <span style="font-weight:500;"> Literature Review</span> : Literatures on Interactive Machine Learning<br>
             🖍️ <span style="font-weight:500;"> UX/UI Design</span> : User flows and UI design of the tool<br>
             📋 <span style="font-weight:500;"> User Study Methodology</span> : Interview scripts, guidelines, tutorials, and metrics <br>
-            👥 <span style="font-weight:500;"> User Study</span> : User experiments with 21 out of 31 participants<br>
+            👥 <span style="font-weight:500;"> User Study</span> : User experiments with 21 of 31 participants<br>
             📊 <span style="font-weight:500;"> Data Analysis</span> : Qualitative & quantitative data analysis<br>
             📄 <span style="font-weight:500;"> Thesis</span> : Introduction, Related Work, User Study, Findings, Conclusion</p>
             <div>
@@ -166,41 +166,52 @@
   <section id="overview">
     <div class="site-section bg-light">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-12 mb-5">
+        <div class="row mb-5">
+          <div class="col-lg-12">
             <h2 class="section-title">Overview</h2>
+          </div>
+          <div class="col-lg-7 mb-5">
             <p>It is <span class="highlight">difficult for non-experts to build machine learning (ML) models</span> at the level that satisfies their needs. 
                 Deep learning models are even more challenging because it is unclear how to improve the model, and a trial-and-error approach is not feasible since training these models is time-consuming. 
-                To assist these novice users, we <span class="highlight">examined how additional features can help</span> while training a deep learning network can contribute to model performance and users’ satisfaction, focusing on the data preparation process.<br></p>
+                To assist these novice users, I <span class="highlight">designed a machine learning model-building tool with features</span> that can help them, focusing on the data preparation process. 
+                Based on the findings from the user experiment, I redesigned the tool to expand its use cases in the real world.
+            </p>
           </div>
+          <div class="col-lg-5 mb-5">
+            <a class="lightbox-img" href="images/grasp/final-prototype.gif" data-lightbox="grasp-prototype">
+              <img src="images/grasp/final-prototype.gif" alt="Image" class="img-fluid img-bg">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2"></div>
           <div class="col-lg-3 mb-5 text-center">
+            <img src="images/grasp/user-icon.png" alt="Image" class="img-fluid">
             <p class="bold">Target Users</p>
             <p>People with little or no knowledge in machine learning</p>
           </div>
+          <div class="col-lg-2"></div>
           <div class="col-lg-3 mb-5 text-center">
+            <img src="images/grasp/goal-icon.png" alt="Image" class="img-fluid">
             <p class="bold">Goals</p>
             <p>Better assist them with building a machine learning model</p>
           </div>
-          <div class="col-lg-3 mb-5 text-center">
+          <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-3 mb-3 text-center">
+            <img src="images/grasp/method-icon.png" alt="Image" class="img-fluid">
             <p class="bold">Method</p>
             <p>Conduct user experiments & Design a machine learning model building tool</p>
           </div>
-          <div class="col-lg-3 mb-5 text-center">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-3 mb-3 text-center">
+            <img src="images/grasp/outcome-icon.png" alt="Image" class="img-fluid">
             <p class="bold">Outcome</p>
-            <p>Implications for designing interfaces for building ML models & Design interfaces</p>
+            <p>Implications for designing interfaces for building ML models</p>
           </div>
-          <div class="col-lg-6 mb-3">
-            <p class="bold">Implemented Tool for the Experiment</p>
-            <a class="lightbox-img" href="images/grasp/grasp_actual_design.png" data-lightbox="grasp-overview" data-title="Initial Tool Design">
-              <img src="images/grasp/grasp_actual_design.png" alt="Image" class="img-fluid img-bg">
-            </a>
-          </div>
-          <div class="col-lg-6 mb-3">
-            <p class="bold">Redesign of the Tool Based on Research Findings</p>
-            <a class="lightbox-img" href="images/grasp/Web-Data Preparation.png" data-lightbox="grasp-overview" data-title="Initial Tool Design">
-              <img src="images/grasp/Web-Data Preparation.png" alt="Image" class="img-fluid img-bg">
-            </a>
-          </div>
+          <div class="col-lg-2"></div>
         </div>
       </div>
     </div>
@@ -245,17 +256,24 @@
     <div class="site-section bg-light" id="">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
-          <div class="col-lg-12 mb-5">
-            <h2 class="section-title">Research Question</h2>
+          <div class="col-lg-12">
+            <h2 class="section-title">Literature Review</h2>
+          </div>
+          <div class="col-lg-4 mb-5">
             <p>
-            Studies have shown that it is not straightforward for non-experts to build ML models without prior knowledge and that they cannot build ML models in an efficient way. <br><br>
-            The major problems were:<br> 
-            <ul>
-              <li>Non-experts rarely tried to understand the internal mechanism of learning algorithms.</li>
-              <li>Most of them did not consider the overfitting problem.</li>
-            </ul>
-            Hence they had trouble improving the performance or even giving up their tasks or ended up having poor accuracy on a new dataset.</p><br>
-            <p><span class="project-challenge">"How can we better assist non-experts with building a machine learning model?"</span></p>
+            Studies have shown that it is not straightforward for non-experts to build ML models without prior knowledge and that they cannot build ML models in an efficient way.</p>
+          </div>
+          <div class="col-lg-8 mb-5">
+            <img src="images/grasp/problems.png" alt="Image" class="img-fluid">
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-title">Research Question</h2>
+          </div>
+          <div class="col-lg-12">
+            <p><span class="project-challenge">"How might we make the machine learning model-building process easier and more understandable for non-experts?"</span></p>
             <p class="cite">Non-experts: People with little or no prior knowledge in machine learning</p>
             <!--<a href="#final-design" class="highlight2 bold highlight2-link">See the final design ↓</a>-->
                 <!--
@@ -504,33 +522,7 @@
       </div>
     </div>
   -->
-    
-
-    <div class="site-section bg-light" >
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2 class="section-title">Procedure</h2>
-          </div>
-        </div>
-        <div class="row mb-5">
-          <div class="col-lg-3"></div>
-          <div class="col-lg-6">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/grasp_procedure.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-1"></div>
-          <div class="col-lg-10">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/procedure-detail.png" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  
 
     <div class="site-section bg-light" id="#">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
