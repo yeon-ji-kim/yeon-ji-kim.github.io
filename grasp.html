@@ -474,25 +474,25 @@
           <div class="row">
             <div class="col-lg-3 mb-3 text-center">
               <a class="lightbox-img" href="images/grasp/D_Data Preparation.png" data-lightbox="grasp-conditions" data-title="Default Condition">
-                <img src="images/grasp/D_Data Preparation.png" alt="Image" class="img-fluid">
+                <img src="images/grasp/D_Data Preparation.png" alt="Image" class="img-fluid img-bg">
               </a>
               <p>No feedback</p>
             </div>
             <div class="col-lg-3 mb-3 text-center">
               <a class="lightbox-img" href="images/grasp/IN_Data Preparation.png" data-lightbox="grasp-conditions" data-title="Interactive Condition">
-                <img src="images/grasp/IN_Data Preparation.png" alt="Image" class="img-fluid">
+                <img src="images/grasp/IN_Data Preparation.png" alt="Image" class="img-fluid img-bg">
               </a>
-              <p>Interaction feedback</p>
+              <p>Interactive feedback</p>
             </div>
             <div class="col-lg-3 mb-3 text-center">
               <a class="lightbox-img" href="images/grasp/EP_Data Preparation.png" data-lightbox="grasp-conditions" data-title="Explainable Condition">
-                <img src="images/grasp/EP_Data Preparation.png" alt="Image" class="img-fluid">
+                <img src="images/grasp/EP_Data Preparation.png" alt="Image" class="img-fluid img-bg">
               </a>
               <p>Explainable feedback</p>
             </div>
             <div class="col-lg-3 mb-3 text-center">
               <a class="lightbox-img" href="images/grasp/F_Data Preparation.png" data-lightbox="grasp-conditions" data-title="Full Condition">
-                <img src="images/grasp/F_Data Preparation.png" alt="Image" class="img-fluid">
+                <img src="images/grasp/F_Data Preparation.png" alt="Image" class="img-fluid img-bg">
               </a>
               <p>Both feedback</p>
             </div>
@@ -546,6 +546,12 @@
           </div>
         </div>
         <div class="row mb-5">
+          <div class="image-absolute-box" >
+            <img src="images/grasp/grasp-data.png" alt="Image" class="img-fluid">
+          </div>
+        </div>
+        <!--
+        <div class="row mb-5">
           <div class="col-lg-6">
             <div class="image-absolute-box" >
               <img src="images/grasp/data.png" alt="Image" class="img-fluid">
@@ -575,7 +581,7 @@
               <img src="images/grasp/data-review.png" alt="Image" class="img-fluid img-bg">
             </div>
           </div>
-        </div>
+        </div>-->
         <!--
         <div class="row mb-5">
           <div class="col-lg-6">
@@ -623,16 +629,9 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-6 textbox">
-            <div class="row">
-              <div class="col-lg-6">
-                <p><span class="bold">Before the task</span></p>
-                <p><span class="">"You should save characteristics of a person's eyes, nose, and mouth."</span></p>
-              </div>
-              <div class="col-lg-6">
-                <p><span class="bold">After the task</span></p>
-                <p><span class="">"Rather than saving only the face data, it would be nice to save the whole body and gait information. It seems that accuracy may decrease due to <span class="highlight">lack of variety in data</span> if only the face is recognized."</span></p>
-              </div>
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/grasp-finding1.png" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
@@ -651,20 +650,9 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-6 textbox">
-            <div class="row">
-              <div class="col-lg-4">
-                <p><span class="bold">Red Mark</span></p>
-                <p><span class="">"It was easy to identify and I could save my time on reviewing data."</span></p>
-              </div>
-              <div class="col-lg-4">
-                <p><span class="bold">Activation Map</span></p>
-                <p><span class="">"If the model recognized the face of the dog, I perceived it as well recognized."</span></p>
-              </div>
-              <div class="col-lg-4">
-                <p><span class="bold">Model Description</span></p>
-                <p><span class="">"I could decide what class I should focus on. It guided me the direction of the next data preparation step."</span></p>
-              </div>
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/grasp-finding2.png" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
@@ -680,8 +668,10 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-6 textbox">
-              <p><span class="">"I added many images where the frontal face of a dog is clearly visible and I think that was the main reason the accuracy increased."</span></p>
+          <div class="col-lg-6">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/grasp-finding3.png" alt="Image" class="img-fluid">
+            </div>
           </div>
         </div>
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -714,27 +704,26 @@
         <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12">
             <h2 class="section-title" id="title-blue">Redesigning the Tool</h2>
-            <p>Based on the findings, I redesigned the tool to be more accessible and usable to non-experts.<br>
+            <p>Now that I have discovered how to better help non-experts build machine learning models and found potential barriers, I redesigned the tool to be more accessible and usable to non-experts.<br>
               Also, I designed the tool to provide the <span class="highlight">whole experience of making a model, testing it, and exporting it</span> to web or mobile environment.
             </p>
           </div>
         </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12">
-            <p class="bold">Key Goals
-              <ul>
-                <li>How can this ML model-building tool be applied to real-world situations?</li>
-                <li>What features are needed to better assist non-experts in building ML models?</li>
-              </ul>
-            </p>
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <div class="image-absolute-box" >
+              <img src="images/grasp/redesign-goal.png" alt="Image" class="img-fluid">
+            </div>
           </div>
-          <div class="col-lg-12">
-            <p class="bold">Approaches</p>
-              1. Present all feedback features.<br>
-              2. Include different data types including speech.<br>
-              3. Guide non-experts to prepare various and plenty of data.<br>
-              4. Reinforce <i>explainability</i> to prevent forming misconceptions.
-            </p>
+        </div>
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <p class="text-center bold">APPROACHES</p>
+            <div class="image-absolute-box" >
+              <img src="images/grasp/redesign-approaches.png" alt="Image" class="img-fluid">
+            </div>
           </div>
           <!--
           <div class="col-lg-3 textbox-outside">
@@ -756,8 +745,10 @@
       <div class="container">
         <div class="row mb-3" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12">
-            <h2 class="section-title">User Flow</h2>
+            <h2 class="section-title">Adding End-to-end Experiences</h2>
             <p>
+              <span class="highlight">To support the onboarding process and exporting and testing</span> after building machine learning models, I included more screens on web application.
+              Also, considering use cases when testing models, I assumed that having a mobile application would make the tool more usable and accessible for users.
             </p>
           </div>
         </div>
@@ -780,109 +771,99 @@
       </div>
     </div>
 
-    <div class="site-section bg-light" id="final-design">
+    <div class="site-section" id="final-design">
       <div class="container">
         <div class="row mb-3" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12">
-            <h2 class="section-title">Final Design</h2>
-            <p><span class="bold">Web</span>: Building, Testing, Exporting, and Importing an Model</p>
+            <h2 class="section-title">Developing the Tool into High Fidelity Layouts</h2>
           </div>
         </div>
         <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/web-all.png" alt="Image" class="img-fluid">
-            </div>
+          <div class="col-lg-4 mb-3">
+            <p>
+              <span class="bold">1. ALL FEATURES</span><br>
+              Since all features had the effect of helping people build better machine learning models, I maintained the features that were used in the experiment. But I developed them to have better explainable features, referring to state of art technologies.
+            </p>
           </div>
-        </div><!--
-        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-5">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/Web-Home.png" alt="Image" class="img-fluid img-bg">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/Web-Setting.png" alt="Image" class="img-fluid img-bg">
-            </div>
+          <div class="col-lg-8 mb-3">
+            <a class="lightbox-img" href="images/grasp/redesign-1-1.png" data-lightbox="grasp-redesign-1" data-title="">
+              <img src="images/grasp/redesign-1-1.png" alt="Image" class="img-fluid">
+            </a>
           </div>
         </div>
         <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-6">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/Web-Data Preparation.png" alt="Image" class="img-fluid img-bg">
-            </div>
+          <div class="col-lg-8 mb-3">
+            <a class="lightbox-img" href="images/grasp/redesign-1-2.png" data-lightbox="grasp-redesign-1" data-title="">
+              <img src="images/grasp/redesign-1-2.png" alt="Image" class="img-fluid">
+            </a>
           </div>
-          <div class="col-lg-6">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/Web-Model Evaluation.png" alt="Image" class="img-fluid img-bg">
-            </div>
-          </div>  
+          <div class="col-lg-4 mb-3">
+            <p>
+              <span class="bold">2. DATA TYPES</span><br>
+              To help users build machine learning models with different data types, I included image, text, and speech options when building machine learning models. When exporting models they built, users can select what data and what file they want to appear in the result, which includes <span class="highlight">image, text, speech, and video</span>.
+            </p>
+          </div>
+          
         </div>
         <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-6">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/Web-Export Setting.png" alt="Image" class="img-fluid img-bg">
-            </div>
+          <div class="col-lg-6 mb-3">
+            <p>
+              <span class="bold">3. GUIDE</span><br>
+              For the screens where users build machine learning models, I included tooltips and text descriptions on each page that would be helpful to users and guide them with appropriate information.
+            </p>
           </div>
-          <div class="col-lg-6">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/Web-Test.png" alt="Image" class="img-fluid img-bg">
-            </div>
+          <div class="col-lg-6 mb-3">
+            <a class="lightbox-img" href="images/grasp/redesign-tooltip.gif" data-lightbox="grasp-redesign-1" data-title="">
+              <img src="images/grasp/redesign-tooltip.gif" alt="Image" class="img-fluid img-bg">
+            </a>
           </div>
-        </div>-->
+        </div>
+        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-8 mb-3">
+            <a class="lightbox-img" href="images/grasp/redesign-1-2.png" data-lightbox="grasp-redesign-1" data-title="">
+              <img src="images/grasp/redesign-1-4.png" alt="Image" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <p>
+              <span class="bold">4. EXPLAINABILITY</span><br>
+              For reinforcing explainability, I included more visualization of image classification and a sentence that non-experts can understand to make them perceive how machines make decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section" id="final-design">
+      <div class="container">
         <div class="row mb-3" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12">
-            <p><span class="bold">Mobile</span>: Testing and Importing an Model</p>
+            <h2 class="section-title">Testing with Users</h2>
           </div>
         </div>
-        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="row mb-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 mb-3">
+            <p>After designing layouts, I recruited two people with no prior knowledge in machine learning and tested the prototype. The goal of it was to test the usability and check if users can complete tasks of building a machine learning model and exporting it.</p>
+          </div>
+          <div class="col-lg-5 mb-3">
+            <p>
+              <span class="bold">Defined Issues</span><br>
+              <ul>
+                <li><span class="bold">Use of Colors</span>: I reused same colors in the system, and this made the participant think that they are related and indicate same data.</li>
+                <li><span class="bold">Remaining Jargons</span>: There were still jargons that didn’t have enough explanations and made the system not easy to use.</li>
+                <li><span class="bold">Unclear Visual Element</span>: The indicator was to let users know that they need more images to train the model. However, I found that participants perceived as the max number of images they can add.</li>
+              </ul>
+            </p>
+          </div>
+          <div class="col-lg-7 mb-3">
+            <a class="lightbox-img" href="images/grasp/usability-testing.png" data-lightbox="grasp-usability" data-title="">
+              <img src="images/grasp/usability-testing.png" alt="Image" class="img-fluid">
+            </a>
+          </div>
           <div class="col-lg-12">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/mob-all.png" alt="Image" class="img-fluid">
-            </div>
+            I’m planning to test the prototype with few more participants and improve the tool design.
           </div>
         </div>
-        <!--
-        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-3">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/Mob.png" alt="Image" class="img-fluid img-bg">
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/Mob-Home.png" alt="Image" class="img-fluid img-bg">
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/Mob-Home-1.png" alt="Image" class="img-fluid img-bg">
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/Mob-Home-2.png" alt="Image" class="img-fluid img-bg">
-            </div>
-          </div>
-        </div>
-        <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-3">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/Mob-Camera.png" alt="Image" class="img-fluid img-bg">
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/Mob-Picture.png" alt="Image" class="img-fluid img-bg">
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="image-absolute-box" >
-              <img src="images/grasp/Mob-Result.png" alt="Image" class="img-fluid img-bg">
-            </div>
-          </div>
-        </div>-->
       </div>
     </div>
   </section>
@@ -908,6 +889,13 @@
               All decisions were made based on evidence from other valid research or solutions. 
               Also, when writing implications in the paper, it was crucial to deliver discussion points based on our findings from the experiment, not being subjective in interpreting them.
               This practice equipped me with the skill to logically and objectively explain my design decisions with proper evidence.
+            </p>
+
+            <span class="section-sub-title d-block section-subsub">Next Steps: Finding Use Cases for Real-World Applications</span>
+            <p class="mb-5">
+              From research, I found how to better assist people in building machine learning models. By redesigning the tool with an end-to-end experience, I thought about how to make it accessible and usable for people with no prior knowledge.
+              However, the real usage seems to be still limited to educational purposes or helping developers with no expertise in machine learning. 
+              I'm planning to conduct user interviews and research for use cases that this tool can be utilized by non-experts.
             </p>
             <!--
             <span class="section-sub-title d-block section-subsub">Working on a Research Project for the First Time</span>
