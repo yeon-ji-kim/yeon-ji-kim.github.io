@@ -98,9 +98,9 @@
       <div class="contain">
         <ul>
           <li class="overview active"><a href="#overview" class="floating-nav">Overview</a></li>
-          <li class="tool"><a href="#tool" class="floating-nav">Tool</a></li>
-          <li class="user-study"><a href="#user-study" class="floating-nav">User Study</a></li>
-          <li class="findings"><a href="#findings" class="floating-nav">Findings</a></li>
+          <li class="define"><a href="#define" class="floating-nav">Define</a></li>
+          <li class="design"><a href="#design" class="floating-nav">Design</a></li>
+          <li class="user-study"><a href="#user-study" class="floating-nav">User Experiment</a></li>
           <li class="redesign"><a href="#redesign" class="floating-nav">Redesign</a></li>
           <li class="reflections"><a href="#reflections" class="floating-nav">Reflections</a></li>
         </ul>
@@ -117,7 +117,7 @@
           <div class="col-lg-5 mr-auto" data-aos="fade-up">
             <h1 class="serif">Grasp</h1>
             <p class="mb-3">Supporting people with building a personalized machine learning model</p>
-            <span class="section-sub-title d-block mb-5">#Design &nbsp; #HCI Research &nbsp; #Machine Learning</span>
+            <span class="section-sub-title d-block mb-5">#Web Design &nbsp; #HCI Research &nbsp; #Machine Learning</span>
             <p><a href="http://koreascience.or.kr/article/JAKO202019550426679.pdf" target="_blank" class="btn btn-primary py-3 px-5" id="cursor">View Published Paper</a></p>
             <!-- github: https://github.com/kyungyeon-lee/Grasp_Final -->
 
@@ -139,7 +139,7 @@
               <p><span class="bold">Type</span><br>Capstone Project (Research Track)</p>
             </div>
             <div class="">
-              <p><span class="bold">Duration</span></b><br>2019.02 - 2019.10</p>
+              <p><span class="bold">Duration</span></b><br>2019.02 - 2019.10 (8 months)</p>
             </div>
             <div class="">
               <p><span class="bold">Team</span><br>Yeonji Kim, Kyeongyeon Lee</p>
@@ -149,7 +149,7 @@
             </div>
           </div>
           <div class="col-lg-8">
-            <p><span class="bold">My Role</span></b><br>I was responsible for <span class="highlight">user research and design</span> of a tool used in the study, as well as managing the overall process.<br><br>
+            <p><span class="bold">My Role</span></b><br>I was responsible for <span class="highlight">user research and design</span> of a tool used in the study, collaborating with another researcher who focused on implementing the tool.<br><br>
             📂 <span style="font-weight:500;"> Literature Review</span> : Literatures on Interactive Machine Learning<br>
             🖍️ <span style="font-weight:500;"> UX/UI Design</span> : User flows and UI design of the tool<br>
             📋 <span style="font-weight:500;"> User Study Methodology</span> : Interview scripts, guidelines, tutorials, and metrics <br>
@@ -172,10 +172,11 @@
             <h2 class="section-title">Overview of the Project</h2>
           </div>
           <div class="col-lg-12 mb-5">
-            <p>It is <span class="highlight">difficult for non-experts to build machine learning (ML) models</span> at the level that satisfies their needs. 
-                Deep learning models are even more challenging because it is unclear how to improve the model, and a trial-and-error approach is not feasible since training these models is time-consuming. 
-                To assist these novice users, I <span class="highlight">designed a machine learning model-building tool with features</span> that can help them, focusing on the data preparation process. 
-                Based on the findings from the user experiment, I redesigned the tool to expand its use cases in the real world.
+            <p><span class="project-challenge">"How might we make the process of creating a machine learning model easier and more understandable for people without prior knowledge?"</span></p>
+            <span class="highlight">Grasp is a web-based tool we created to investigate opportunities in making machine learning technology more accessible to people.</span> 
+            It is designed with features that help people make quick decisions and understand the underlying process of machine learning in more understandable ways.
+            To observe if the tool is effective in helping people create machine learning models, I conducted <span class="bold">user experiments with 32 participants.</span> 
+            <span class="bold">Based on the findings from the user experiment, I developed the tool design to include end-to-end experience and improve usability.</span>
             </p>
           </div>
           <div class="col-lg-1"></div>
@@ -241,7 +242,9 @@
         </div>
       </div>
     </div>
+  </section>
 
+  <section id="define">
     <div class="site-section bg-blue">
       <div class="container">
         <div class="row text-center">
@@ -257,8 +260,9 @@
     </div>
     <div class="site-section bg-light" id="">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
+        <div class="row mb-5">
           <div class="col-lg-12">
+            <span class="section-sub-title d-block">Define</span>
             <h2 class="section-title">Literature Review: What is the problem?</h2>
           </div>
           <div class="col-lg-4 mb-5">
@@ -270,12 +274,13 @@
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row mb-5">
           <div class="col-lg-12">
+            <span class="section-sub-title d-block">Define</span>
             <h2 class="section-title">Research Question</h2>
           </div>
           <div class="col-lg-12">
-            <p><span class="project-challenge">"How might we make the machine learning model-building process easier and more understandable for non-experts?"</span></p>
+            <p><span class="project-challenge">"How might we make the process of creating a machine learning model easier and more understandable for people without prior knowledge?"</span></p>
             <p class="cite">Non-experts: People with little or no prior knowledge in machine learning</p>
             <!--<a href="#final-design" class="highlight2 bold highlight2-link">See the final design ↓</a>-->
                 <!--
@@ -286,12 +291,33 @@
             </p>-->
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-12 mb-3">
+            <span class="section-sub-title d-block">Define</span>
+            <h2 class="section-title">Personas</h2>
+            <p>
+              To narrow down the problem, I defined personas as those who would benefit from being more accessible to machine learning technology.
+              <ol>
+                <li><span class="bold">Developers</span>: Can develop their own products and need machine learning models, but don't know how to build them.</li>
+                <li><span class="bold">People who want to learn machine learning</span>: Can learn more about machine learning by getting hands-on experience.</li>
+              </ol> 
+            </p>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-5 mb-3">
+            <img src="images/grasp/persona-1.png" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-lg-5 mb-3">
+            <img src="images/grasp/persona-2.png" alt="Image" class="img-fluid">
+          </div>
+        </div>
       </div>
     </div>
     <div class="site-section bg-light">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row mb-3">
           <div class="col-lg-12">
+            <span class="section-sub-title d-block">Define</span>
             <h2 class="section-title">Our Approach: Adding features in the ML building process</h2>
             <p class="mb-3">
               To better assist novice users with building a deep learning model, we decided to use the concept of <span class="bold">Interactive Machine Learning</span> and <span class="bold">Explainable Machine Learning</span> from previous research.<br><br>
@@ -323,11 +349,12 @@
     </div>
   </section>
 
-  <section id="tool">
+  <section id="design">
     <div class="site-section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row mb-3">
           <div class="col-lg-12">
+            <span class="section-sub-title d-block">Design</span>
             <h2 class="section-title" id="title-blue">Creating a Tool to Validate Hypothesis</h2>
             <p class="mb-3">
               To observe how non-experts create ML systems and test the effectiveness of our approach, we decided to create an environment for building an ML model.
@@ -435,6 +462,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12 mb-3">
+            <span class="section-sub-title d-block">User Experiment</span>
             <h2 class="section-title" id="title-blue">Conducting User Experiment to Test the Tool</h2>
             <p>To investigate the effectiveness of interactivity and explainability and to identify potential barriers that non-experts would experience while building their ML systems, we conducted a study with our custom user interface designed for this study.
             </p>
@@ -462,6 +490,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-lg-12">
+            <span class="section-sub-title d-block">User Experiment</span>
             <h2 class="section-title">Experimental Conditions</h2>
           </div>
         </div>
@@ -536,14 +565,13 @@
 
     <div class="site-section bg-light" id="#">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
+        <div class="row mb-5">
           <div class="col-lg-12">
-            <div class="mb-5">
+            <span class="section-sub-title d-block">User Experiment</span>
               <h2 class="section-title">Interpretating Data from the Experiment</h2>
               <p>
                 With the non-parametric data collected from participants, I analyzed them <span class="highlight">qualitatively and quantitatively</span> using Python and Excel/Google Spreadsheet.
               </p>
-            </div>
           </div>
         </div>
         <div class="row mb-5">
@@ -606,13 +634,12 @@
         </div>-->
       </div>
     </div>
-</section>
 
-<section id="findings">
     <div class="site-section">
       <div class="container">
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 mr-auto">
+            <span class="section-sub-title d-block">User Experiment</span>
             <h2 class="section-title" id="title-blue">Key Findings from the Experiment</h2>
           </div>
         </div>
@@ -646,7 +673,7 @@
               <p>
                 <ul>
                   <li><span class="bold">Interactive feedback</span> has the advantage of <span class="highlight">providing immediate feedback</span> to users.</li>
-                  <li><span class="bold">Explainable feedback</span> was found to be more beneficial for <span class="highlight">deepening users’ understanding of building a better ML system.</span></li>
+                  <li><span class="bold">Explainable feedback</span> <span class="highlight">deepened users’ understanding of building a better ML system.</span></li>
                 </ul>
               </p>
             </div>
@@ -704,6 +731,7 @@
       <div class="container">
         <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12">
+            <span class="section-sub-title d-block">Redesign - Define</span>
             <h2 class="section-title" id="title-blue">Redesigning the Tool</h2>
             <p>Now that I have discovered how to better help non-experts build machine learning models and found potential barriers, I redesigned the tool to be more accessible and usable to non-experts.<br>
               Also, I designed the tool to provide the <span class="highlight">whole experience of making a model, testing it, and exporting it</span> to web or mobile environment.
@@ -746,6 +774,7 @@
       <div class="container">
         <div class="row mb-3" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12">
+            <span class="section-sub-title d-block">Redesign - Design</span>
             <h2 class="section-title">Adding End-to-end Experiences</h2>
             <p>
               <span class="highlight">To support the onboarding process and exporting and testing</span> after building machine learning models, I included more screens on web application.
@@ -776,6 +805,7 @@
       <div class="container">
         <div class="row mb-3" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12">
+            <span class="section-sub-title d-block">Redesign - Develop</span>
             <h2 class="section-title">Developing the Tool into High Fidelity Layouts</h2>
           </div>
         </div>
@@ -840,6 +870,7 @@
       <div class="container">
         <div class="row mb-3" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12">
+            <span class="section-sub-title d-block">Redesign - Develop</span>
             <h2 class="section-title">Testing with Users</h2>
           </div>
         </div>
